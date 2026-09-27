@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>Эльвира Валеева</title>
+<title>Глубинная диагностика · Эльвира Валеева</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -46,20 +46,21 @@ a{color:inherit}
 /* текстовая часть */
 .niz{position:relative;z-index:2;flex:1 1 auto;display:flex;flex-direction:column;justify-content:center;padding:4px 20px 24px}
 .verh{font-family:"Montserrat",system-ui,sans-serif;font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-size:13px;color:var(--persik);margin-bottom:14px}
-h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:13px}
+h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
+.pod-h1{font-size:17px;line-height:1.35;color:var(--persik);margin-bottom:14px}
 .lid{font-size:15.5px;line-height:1.55;color:var(--lid);margin-bottom:20px}
 .lid b{color:var(--krem);font-weight:600}
 
 /* кнопка */
 .knopka{
   display:block; text-align:center; text-decoration:none;
-  background:var(--krem); color:var(--terra);
+  background:var(--terra); color:var(--krem);
   font-weight:600; font-size:17px;
   padding:19px 22px; border-radius:18px;
-  box-shadow:0 12px 28px rgba(0,0,0,.2);
+  box-shadow:0 12px 28px rgba(165,96,74,.28);
   transition:transform .18s ease, box-shadow .18s ease;
 }
-.knopka:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(0,0,0,.26)}
+.knopka:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(165,96,74,.34)}
 .knopka:focus-visible{outline:2px solid var(--persik);outline-offset:4px}
 .podpis{font-size:13.5px;line-height:1.5;color:var(--podpis-temn);margin-top:12px;text-align:center}
 
@@ -71,7 +72,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:13px}
 /* ——— кадр 2: с чем приходят ——— */
 .kadr-rechi{justify-content:center;padding:40px 20px;background:var(--bezh);color:var(--tekst)}
 .vnutri{width:100%;max-width:560px;margin:0 auto}
-.nad{font-family:"Montserrat",system-ui,sans-serif;font-weight:500;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--terra);margin-bottom:16px}
+.nad{font-family:"Montserrat",system-ui,sans-serif;font-weight:600;font-size:16px;letter-spacing:.07em;text-transform:uppercase;color:var(--terra);margin-bottom:16px}
 .kadr-rechi h2{font-size:29px;letter-spacing:-.012em;margin-bottom:12px}
 .pod{font-size:15.5px;line-height:1.55;color:var(--tekst-myag);margin-bottom:20px}
 .rechi{display:grid;gap:38px}
@@ -107,7 +108,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:13px}
 .kadr-kto .foto img{width:100%;height:100%;object-fit:cover;object-position:50% 22%}
 .kadr-kto .foto::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(78,58,51,0) 45%,rgba(78,58,51,.92) 100%)}
 .kadr-kto .slova{padding:22px 20px 30px}
-.kadr-kto .nad{color:var(--persik)}
+.kadr-kto .nad{color:var(--persik-svet)}
 .kadr-kto .imya{font-family:"Montserrat",system-ui,sans-serif;font-weight:600;font-size:29px;line-height:1.2;letter-spacing:-.012em;margin-bottom:6px}
 .kadr-kto .rol{font-size:16px;color:var(--lid-temn);margin-bottom:14px}
 .kadr-kto .cifry{display:flex;gap:20px;padding:13px 0;border-top:1px solid var(--temno2);border-bottom:1px solid var(--temno2);margin-bottom:15px}
@@ -125,7 +126,8 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:13px}
   .vual{background:linear-gradient(to right,#4E3A33 0%,rgba(78,58,51,.55) 6%,rgba(78,58,51,0) 22%)}
   .niz{order:1;flex:1 1 54%;justify-content:center;padding:0 64px}
   .verh{margin-bottom:18px}
-  h1{font-size:46px;max-width:16ch}
+  h1{font-size:46px;max-width:23ch}
+  .pod-h1{font-size:22px;margin-bottom:18px}
   .lid{font-size:17.5px;max-width:44ch}
   .knopka{display:inline-block;padding-left:40px;padding-right:40px}
   .podpis{text-align:left;max-width:44ch}
@@ -133,7 +135,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:13px}
   .kadr-rechi{flex-direction:column;justify-content:center;padding:80px 48px}
   .vnutri{max-width:1040px}
   .kadr-rechi h2{font-size:44px}
-  .nad{margin-bottom:24px}
+  .nad{font-size:19px;margin-bottom:24px}
   .kadr-rechi .pod{font-size:19px;margin-bottom:46px}
   .rechi{grid-template-columns:repeat(3,1fr);gap:40px}
   .rech{padding-top:26px}
@@ -176,7 +178,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:13px}
   h1{font-size:38px}
   .lid{font-size:16.5px}
   .kadr-rechi,.kadr-otlichie,.kadr-put{padding:36px 48px}
-  .nad{margin-bottom:14px}
+  .nad{font-size:17px;margin-bottom:14px}
   .kadr-rechi h2,.kadr-put h2{font-size:34px}
   .kadr-rechi .pod,.kadr-put .pod{font-size:17px;margin-bottom:26px}
   .rechi{gap:30px}
@@ -201,7 +203,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:13px}
 /* телефон: блоки по высоте текста, экран не прыгает */
 @media (max-width:899px){
   .kadr-rechi .rechi{gap:30px}
-  .kadr-rechi,.kadr-otlichie,.kadr-put,.kadr-sfery,.kadr-cena,.kadr-otzyvy,.kadr-final{min-height:auto}
+  .kadr-rechi,.kadr-otlichie,.kadr-put,.kadr-sfery,.kadr-obrazec,.kadr-cena,.kadr-otzyvy,.kadr-vopros,.kadr-final{min-height:auto}
 }
 
 /* ——— кадр 6: с чем работаю ——— */
@@ -242,9 +244,9 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:13px}
   .kadr-sfery .plashka li{font-size:16.5px}
 }
 
-/* ——— кадр 7: сколько стоит ——— */
+/* ——— кадр 8: сколько стоит ——— */
 .kadr-cena{justify-content:center;padding:44px 20px;background:var(--temno);color:var(--krem)}
-.kadr-cena .nad{color:var(--persik)}
+.kadr-cena .nad{color:var(--persik-svet)}
 .kadr-cena h2{font-size:29px;letter-spacing:-.012em;margin-bottom:10px}
 .kadr-cena .summa{font-family:"Montserrat",system-ui,sans-serif;font-weight:600;font-size:44px;line-height:1.05;letter-spacing:-.02em;color:var(--persik);margin:0 0 6px}
 .kadr-cena .za{font-size:15px;line-height:1.5;color:var(--podpis-temn);margin:0 0 22px}
@@ -285,13 +287,67 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:13px}
   .kadr-cena .snachala{margin-top:16px;font-size:15.5px}
 }
 
-/* ——— кадр 8: отзывы ——— */
+/* ——— кадр 7: образец отчёта ——— */
+.kadr-obrazec{justify-content:center;padding:44px 20px;background:var(--bezh);color:var(--tekst)}
+.kadr-obrazec h2{font-size:29px;letter-spacing:-.012em;margin-bottom:12px}
+.kadr-obrazec .dve{display:grid;gap:20px;align-items:start}
+.kadr-obrazec .karta{background:var(--krem);border:1px solid var(--liniya);border-radius:18px;padding:18px 20px}
+.kadr-obrazec .karta+.karta{margin-top:14px}
+.kadr-obrazec .metka{font-family:"Montserrat",system-ui,sans-serif;font-weight:500;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--terra);margin:0 0 12px}
+.kadr-obrazec .karta ul{list-style:none;display:grid;gap:9px;margin:0;padding:0}
+.kadr-obrazec .karta li{position:relative;padding-left:22px;font-size:15.5px;line-height:1.45;color:var(--tekst-myag)}
+.kadr-obrazec .karta li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--terra)}
+.kadr-obrazec .vyd{border-top:1px solid var(--liniya);padding-top:11px;margin-top:11px}
+.kadr-obrazec .vyd:first-of-type{border-top:0;padding-top:0;margin-top:0}
+.kadr-obrazec .vyd b{display:block;font-family:"Montserrat",system-ui,sans-serif;font-weight:600;font-size:16px;line-height:1.25;color:var(--tekst);margin-bottom:4px}
+.kadr-obrazec .vyd span{display:block;font-size:15px;line-height:1.5;color:var(--tekst-myag)}
+.kadr-obrazec .plashka{background:var(--terra);color:var(--krem);border-radius:22px;padding:20px}
+.kadr-obrazec .plashka .metka{color:var(--persik-svet)}
+.kadr-obrazec .plashka ul{list-style:none;display:grid;gap:9px;margin:0;padding:0}
+.kadr-obrazec .plashka li{position:relative;padding-left:22px;font-size:15.5px;line-height:1.45;color:var(--krem-tepl)}
+.kadr-obrazec .plashka li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--persik-svet)}
+.kadr-obrazec .snoska{margin:16px 0 0;padding-top:14px;border-top:1px solid rgba(251,237,229,.3);font-size:14.5px;line-height:1.5;color:var(--krem-tepl)}
+.kadr-obrazec .snoska b{color:var(--krem);font-weight:600}
+.kadr-obrazec .snoska+.snoska{margin-top:8px;padding-top:0;border-top:0}
+@media (min-width:900px){
+  .kadr-obrazec{flex-direction:column;justify-content:center;padding:80px 48px}
+  .kadr-obrazec h2{font-size:44px}
+  .kadr-obrazec .pod{font-size:19px;margin-bottom:46px}
+  .kadr-obrazec .dve{grid-template-columns:54fr 46fr;gap:44px;align-items:stretch}
+  .kadr-obrazec .karta{padding:26px 28px;border-radius:22px}
+  .kadr-obrazec .karta+.karta{margin-top:18px}
+  .kadr-obrazec .karta li{font-size:18px;padding-left:26px}
+  .kadr-obrazec .vyd{padding-top:14px;margin-top:14px}
+  .kadr-obrazec .vyd b{font-size:19px}
+  .kadr-obrazec .vyd span{font-size:16.5px}
+  .kadr-obrazec .plashka{padding:36px 34px;border-radius:26px;display:flex;flex-direction:column}
+  .kadr-obrazec .plashka ul{margin-bottom:auto}
+  .kadr-obrazec .plashka ul{gap:14px}
+  .kadr-obrazec .plashka li{font-size:18px;padding-left:26px}
+  .kadr-obrazec .snoska{margin-top:24px;font-size:16.5px}
+}
+@media (min-width:900px) and (max-height:780px){
+  .kadr-obrazec{padding:36px 48px}
+  .kadr-obrazec h2{font-size:34px}
+  .kadr-obrazec .pod{font-size:17px;margin-bottom:26px}
+  .kadr-obrazec .karta{padding:20px 22px}
+  .kadr-obrazec .karta li{font-size:15.5px}
+  .kadr-obrazec .vyd b{font-size:17px}
+  .kadr-obrazec .vyd span{font-size:15px}
+  .kadr-obrazec .plashka{padding:26px 28px}
+  .kadr-obrazec .plashka li{font-size:16.5px}
+  .kadr-obrazec .snoska{font-size:15.5px}
+}
+
+/* ——— кадр 9: отзывы ——— */
 .kadr-otzyvy{justify-content:center;padding:44px 20px;background:var(--bezh);color:var(--tekst)}
 .kadr-otzyvy h2{font-size:29px;letter-spacing:-.012em;margin-bottom:12px}
 .kadr-otzyvy .lenta{display:grid;gap:12px}
 .kadr-otzyvy .otzyv{background:var(--krem);border:1px solid var(--liniya);border-radius:18px;padding:16px 18px;display:grid;gap:6px;align-content:start}
 .kadr-otzyvy .otzyv .kto{font-family:"Montserrat",system-ui,sans-serif;font-weight:600;font-size:17px;color:var(--terra);line-height:1.2;margin:0}
 .kadr-otzyvy .otzyv p.slova{font-size:15.5px;line-height:1.5;color:var(--tekst-myag);margin:0}
+.kadr-otzyvy .otzyv p.zapros{font-size:14.5px;line-height:1.45;color:var(--tekst-myag);margin:0;padding-left:11px;border-left:2px solid var(--persik)}
+.kadr-otzyvy .otzyv p.zapros b{color:var(--terra);font-weight:600}
 @media (min-width:900px){
   .kadr-otzyvy{flex-direction:column;justify-content:center;padding:80px 48px}
   .kadr-otzyvy h2{font-size:44px;margin-bottom:12px}
@@ -300,6 +356,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:13px}
   .kadr-otzyvy .otzyv{padding:24px 26px;border-radius:22px;gap:8px}
   .kadr-otzyvy .otzyv .kto{font-size:23px}
   .kadr-otzyvy .otzyv p.slova{font-size:17.5px;line-height:1.55}
+  .kadr-otzyvy .otzyv p.zapros{font-size:16px;padding-left:13px}
 }
 @media (min-width:900px) and (max-height:780px){
   .kadr-otzyvy{padding:36px 48px}
@@ -310,11 +367,14 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:13px}
   .kadr-otzyvy .otzyv p.slova{font-size:15.5px;line-height:1.5}
 }
 
-/* ——— кадр 9: финал ——— */
+/* ——— кадр 11: финал ——— */
 .kadr-final{justify-content:center;padding:44px 20px 112px;background:var(--krem);color:var(--tekst)}
 .kadr-final h2{font-size:29px;letter-spacing:-.012em;margin-bottom:12px}
 .kadr-final .zov{font-size:15.5px;line-height:1.55;color:var(--tekst-myag);margin:0}
 .kadr-final .zov b{color:var(--terra);font-weight:600}
+.kadr-final .beseda{list-style:none;counter-reset:shag;display:grid;gap:10px;margin:16px 0 0;padding:0}
+.kadr-final .beseda li{counter-increment:shag;position:relative;padding-left:32px;font-size:15px;line-height:1.5;color:var(--tekst-myag)}
+.kadr-final .beseda li::before{content:counter(shag);position:absolute;left:0;top:.02em;width:24px;height:24px;border-radius:50%;background:var(--terra);color:var(--krem);font-family:"Montserrat",system-ui,sans-serif;font-weight:600;font-size:13px;line-height:24px;text-align:center}
 .kadr-final .setka{display:grid;gap:22px}
 .kadr-final .plashka{background:var(--bezh);border:1px solid var(--liniya);border-radius:22px;padding:22px 20px}
 .kadr-final .plashka .metka{font-family:"Montserrat",system-ui,sans-serif;font-weight:500;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--terra);margin-bottom:12px}
@@ -332,7 +392,10 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:13px}
   .kadr-final{flex-direction:column;justify-content:center;padding:80px 48px 128px}
   .kadr-final .setka{grid-template-columns:52fr 48fr;gap:48px;align-items:center}
   .kadr-final h2{font-size:44px;margin-bottom:18px}
-  .kadr-final .zov{font-size:19px;max-width:30ch}
+  .kadr-final .zov{font-size:19px;max-width:32ch}
+  .kadr-final .beseda{gap:13px;margin-top:22px}
+  .kadr-final .beseda li{font-size:17px;padding-left:38px;max-width:40ch}
+  .kadr-final .beseda li::before{width:28px;height:28px;font-size:14.5px;line-height:28px}
   .kadr-final .plashka{padding:40px 36px;border-radius:26px}
   .kadr-final .plashka .metka{margin-bottom:14px}
   .kadr-final .plashka ul{gap:14px;margin-bottom:28px}
@@ -345,9 +408,56 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:13px}
   .kadr-final{padding:36px 48px 104px}
   .kadr-final h2{font-size:34px}
   .kadr-final .zov{font-size:17px}
+  .kadr-final .beseda{gap:9px;margin-top:14px}
+  .kadr-final .beseda li{font-size:15.5px}
   .kadr-final .plashka{padding:28px 30px}
   .kadr-final .plashka ul{gap:10px;margin-bottom:20px}
   .kadr-final .plashka li{font-size:16px}
+}
+
+@media (max-width:899px){
+  .kadr-final{padding-bottom:36px}
+  .kadr-final .podval{position:static;margin-top:34px;padding:16px 0 0}
+}
+
+/* ——— кадр 10: вопросы и ответы ——— */
+.kadr-vopros{justify-content:center;padding:40px 20px;background:var(--krem-tepl);color:var(--tekst)}
+.kadr-vopros h2{font-size:29px;letter-spacing:-.012em;margin-bottom:12px}
+.kadr-vopros .spisok{display:grid;gap:0}
+.kadr-vopros .stolbik{border-top:1px solid var(--liniya)}
+.kadr-vopros details{border-bottom:1px solid var(--liniya)}
+.kadr-vopros summary{
+  list-style:none; cursor:pointer; display:flex; gap:14px; align-items:flex-start;
+  padding:13px 0;
+  font-family:"Montserrat",system-ui,sans-serif; font-weight:600;
+  font-size:17px; line-height:1.34; color:var(--terra);
+}
+.kadr-vopros summary::-webkit-details-marker{display:none}
+.kadr-vopros summary::after{
+  content:"+"; margin-left:auto; flex:none;
+  font-size:23px; line-height:1.1; font-weight:500; color:var(--persik);
+}
+.kadr-vopros details[open] summary::after{content:"\2013"}
+.kadr-vopros summary:focus-visible{outline:2px solid var(--persik);outline-offset:3px}
+.kadr-vopros .otvet{padding:0 0 18px;font-size:15.5px;line-height:1.55;color:var(--tekst-myag)}
+.kadr-vopros .otvet p+p{margin-top:10px}
+.kadr-vopros .otvet ul{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:7px}
+.kadr-vopros .otvet li{position:relative;padding-left:22px}
+.kadr-vopros .otvet li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--terra)}
+@media (min-width:900px){
+  .kadr-vopros{flex-direction:column;justify-content:center;padding:80px 48px}
+  .kadr-vopros h2{font-size:44px;margin-bottom:12px}
+  .kadr-vopros .pod{font-size:19px;margin-bottom:18px}
+  .kadr-vopros .spisok{grid-template-columns:1fr 1fr;column-gap:46px;align-items:start}
+  .kadr-vopros summary{font-size:18px;padding:7px 0}
+  .kadr-vopros .otvet{font-size:15.5px;padding-bottom:14px}
+}
+@media (min-width:900px) and (max-height:780px){
+  .kadr-vopros{padding:36px 48px}
+  .kadr-vopros h2{font-size:34px}
+  .kadr-vopros .pod{font-size:17px}
+  .kadr-vopros summary{font-size:17px;padding:7px 0}
+  .kadr-vopros .otvet{font-size:15px}
 }
 </style>
 </head>
@@ -360,10 +470,11 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:13px}
   </div>
   <div class="niz">
     <p class="verh">Эльвира Валеева</p>
-    <h1>Разбор вашей ситуации по фотографии</h1>
-    <p class="lid">Во время сеанса вам не нужно никуда приходить, ничего рассказывать вслух и быть на связи. <b>Вы присылаете фото, свои данные и вопросы</b> — и через 3–7&nbsp;дней получаете аудиозапись с расшифровкой.</p>
-    <a class="knopka" href="https://t.me/elvira_valeeva777">Бесплатный разговор 30&nbsp;минут</a>
-    <p class="podpis">Ни к чему не обязывает.</p>
+    <h1>Глубинная диагностика</h1>
+    <p class="pod-h1">Разбор вашей ситуации по фотографии</p>
+    <p class="lid">Во время сеанса вам не нужно никуда приходить, ничего рассказывать вслух и быть на связи. <b>Вы присылаете фото, свои данные и вопросы</b> — и через 3–7&nbsp;дней получаете отчёт: аудиозапись разбора и расшифровку текстом.</p>
+    <a class="knopka" href="https://t.me/elvira_valeeva777">Бесплатная предварительная беседа</a>
+    <p class="podpis">30&nbsp;минут. Познакомимся и решим, подходит ли вам такой формат работы.</p>
   </div>
 </section>
 
@@ -413,7 +524,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:13px}
   <div class="vnutri">
     <p class="nad">Как это проходит</p>
     <h2>Что мы делаем — и как</h2>
-    <p class="pod">Наш метод — энерго-информационный гипноз. Я ввожу в гипноз проводника, и в этом состоянии он видит вашу ситуацию по фотографии: не события, а причину, которая держит вашу ситуацию. Я живу в Афинах, проводник — в Риге, мы работаем вдвоём по телефону. Вам в это время ничего делать не нужно.</p>
+    <p class="pod"><b>Глубинная диагностика — это один сеанс, на котором мы смотрим вашу ситуацию по фотографии.</b> Наш метод — энергоинформационный гипноз. Я ввожу в гипноз проводника, и в этом состоянии он видит вашу ситуацию по фотографии: не события, а причину, которая держит вашу ситуацию. Я живу в Афинах, проводник — в Риге, мы работаем вдвоём по телефону. Вам в это время ничего делать не нужно.</p>
     <div class="shagi">
       <div class="shag">
         <p class="nomer">1</p>
@@ -446,12 +557,12 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:13px}
       <div class="shag">
         <p class="nomer">5</p>
         <div>
-          <h3>Вы получаете результат через 3–7&nbsp;дней</h3>
-          <p>Аудиозапись разбора, расшифровку текстом и рекомендации — что с этим делать дальше. Если что-то останется непонятным — объясню, это входит в цену.</p>
+          <h3>Вы получаете отчёт через 3–7&nbsp;дней</h3>
+          <p>Аудиозапись разбора, расшифровку текстом и рекомендации — что с этим делать дальше. Это и есть энергоинформационный отчёт. Если что-то останется непонятным — объясню, это входит в цену.</p>
         </div>
       </div>
     </div>
-    <p class="tajna"><b>О конфиденциальности:</b> фотография и данные нужны только для настройки и остаются у меня — я не передаю их никому и не выкладываю никуда. Записи сеансов я не публикую никогда.</p>
+    <p class="tajna"><b>О конфиденциальности:</b> фото нужно только для настройки — после сеанса я его удаляю. Ваши данные я не передаю никому и никуда не выкладываю. Записи сеансов я не публикую никогда.</p>
   </div>
 </section>
 
@@ -469,7 +580,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:13px}
       </div>
       <p class="tekst">Я не даю советов и не веду курсы. Мы разбираем вашу ситуацию по всем сферам — по-настоящему, до причины.</p>
       <p class="tekst">Если через полгода-год появится новая ситуация — вернёмся.</p>
-      <p class="uchoba"><b>Обучение:</b> сертификат Международной ассоциации энерго-информационного гипноза, Санкт-Петербург. Сертификат «Нейрографика», базовый уровень — Институт психологии творчества Павла Пискарёва, 2022.</p>
+      <p class="uchoba"><b>Обучение:</b> сертификат Международной ассоциации энергоинформационного гипноза, Санкт-Петербург. Сертификат «Нейрографика», базовый уровень — Институт психологии творчества Павла Пискарёва, 2022.</p>
     </div>
   </div>
 </section>
@@ -491,9 +602,52 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:13px}
         <p class="metka">Порядок сеанса</p>
         <ul>
           <li>Сначала смотрим все сферы и находим причины</li>
-          <li>Потом я отвечаю на ваши вопросы</li>
+          <li>Потом я задаю ваши вопросы, отвечает проводник</li>
           <li>В конце — гармонизация и рекомендации</li>
         </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="kadr kadr-obrazec">
+  <div class="vnutri">
+    <p class="nad">Образец отчёта</p>
+    <h2>Как выглядит результат</h2>
+    <p class="pod">Выдержки из настоящего отчёта — публикую только с разрешения клиента и только имя, по его желанию.</p>
+    <div class="dve">
+      <div>
+        <div class="karta">
+          <p class="metka">С чем пришёл Андрей</p>
+          <ul>
+            <li>Мысли не останавливаются, от этого тяжесть в голове</li>
+            <li>Состояние в теле, которое возвращается снова и снова</li>
+            <li>Деньги: брать ли на себя новые обязательства</li>
+            <li>Менять ли место жизни</li>
+          </ul>
+        </div>
+        <div class="karta">
+          <p class="metka">Что увидели на сеансе</p>
+          <div class="vyd"><b>Мысли и состояние</b><span>Хаос в мыслях — не черта характера. Это следствие постоянного анализа и недосыпа: ум не получает тишины. Дано дыхательное упражнение, чтобы возвращать себе покой за несколько минут.</span></div>
+          <div class="vyd"><b>Здоровье</b><span>Энергетическое тело целостное, но одно место в теле отзывается иначе. Рекомендовано не откладывать визит к врачу и вернуть в жизнь простые ежедневные привычки.</span></div>
+          <div class="vyd"><b>Деньги и дело</b><span>Сейчас открыт благоприятный период, а новые обязательства лучше отложить. Ваша сильная сторона — умение договариваться там, где другие не могут: на этом и стоит строить доход.</span></div>
+          <div class="vyd"><b>Предназначение</b><span>Ваша сила — восстанавливать баланс и справедливость там, где вы оказываетесь. Главный инструмент — ваш голос: им вы и убеждаете, и успокаиваете.</span></div>
+        </div>
+      </div>
+      <div class="plashka">
+        <p class="metka">Что в отчёте по порядку</p>
+        <ul>
+          <li>Общее состояние и тип души</li>
+          <li>Мысли, эмоции и работа ума</li>
+          <li>Здоровье: где тело просит внимания</li>
+          <li>Деньги и дело: что поддерживает, что мешает</li>
+          <li>Отношения, семья и место жизни</li>
+          <li>Предназначение и способности</li>
+          <li>Гармонизация и итоговые рекомендации</li>
+        </ul>
+        <p class="snoska"><b>Объём:</b> у Андрея расшифровка вышла на 15&nbsp;страниц.</p>
+        <p class="snoska">Работа не заменяет медицинскую и психиатрическую помощь: если речь о теле, я прошу показаться врачу.</p>
       </div>
     </div>
   </div>
@@ -503,19 +657,19 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:13px}
 <section class="kadr kadr-cena">
   <div class="vnutri">
     <p class="nad">Цена</p>
-    <h2>Сколько стоит сеанс</h2>
+    <h2>Один сеанс — чтобы увидеть ситуацию целиком</h2>
     <div class="dve">
       <div>
         <p class="summa">20&nbsp;000&nbsp;₽</p>
-        <p class="za">Одна оплата за весь сеанс. Ни подписки, ни продолжения, ни доплат за «второй этап».</p>
+        <p class="za">Одна оплата за весь сеанс. Вы получаете подробный разбор сразу по нескольким сферам, ответы на свои вопросы, аудиозапись, расшифровку текстом и рекомендации.</p>
         <ul class="pochemu">
           <li><b>Час работы — но по всем сферам сразу</b>Сеанс идёт около часа. Сначала проходим все ваши сферы — от здоровья до предназначения, потом я задаю ваши вопросы, а в конце — гармонизация.</li>
-          <li><b>Это один раз, а не курс</b>Полгода занятий у любого специалиста стоят в разы дороже. И работают двое — я и проводник.</li>
-          <li><b>Сравните с ценой одной ошибки</b>Неверное решение о работе, деле, переезде или отношениях стоит куда больше — и остаётся с вами на годы.</li>
+          <li><b>Это не курс и не подписка</b>Один запрос — один подробный разбор. Ни продолжения, ни доплат за «второй этап». Полгода занятий у специалиста стоят в разы дороже.</li>
+          <li><b>Работают двое — я и проводник</b>Поэтому за один сеанс успеваем пройти всё, а не разбирать по одному вопросу за встречу.</li>
         </ul>
       </div>
       <div class="plashka">
-        <p class="metka">Что входит</p>
+        <p class="metka">Что входит в диагностику</p>
         <ul>
           <li>Здоровье, отношения, дело и деньги</li>
           <li>Скрытые таланты, возможности и предназначение</li>
@@ -526,7 +680,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:13px}
           <li>Аудиозапись, расшифровка текстом и рекомендации</li>
           <li>Пояснения по записи после сеанса, если что-то непонятно — входит в цену</li>
         </ul>
-        <p class="snachala"><b>Сначала — бесплатный разговор 30&nbsp;минут.</b> На нём мы вместе сформулируем ваши вопросы: от того, как вопрос задан, зависит точность ответа. Голосом или перепиской — как вам удобнее. Оплата только после разговора.</p>
+        <p class="snachala"><b>Сначала — бесплатная предварительная беседа, 30&nbsp;минут.</b> Вы рассказываете, с чем пришли; я задаю уточняющие вопросы и объясняю, подходит ли ваш запрос для такого формата работы. Если подходит — вместе формулируем вопросы для сеанса. Оплата только после беседы.</p>
       </div>
     </div>
   </div>
@@ -536,7 +690,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:13px}
   <div class="vnutri">
     <p class="nad">Отзывы</p>
     <h2>Что говорят после сеанса</h2>
-    <p class="pod">Публикую только с разрешения — и только имя.</p>
+    <p class="pod">Ко мне приходят по рекомендации, и большинство клиентов не хотят публичности. Публикую только то, на что дали разрешение, — и только имя, по желанию клиента.</p>
     <div class="lenta">
       <div class="otzyv">
         <p class="kto">Артём</p>
@@ -552,7 +706,112 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:13px}
       </div>
       <div class="otzyv">
         <p class="kto">Евгения</p>
-        <p class="slova">Я не знаю, какие даже слова подобрать. То, что вы делаете, — это уникально, это невозможно объяснить словами. Сейчас у меня настолько всё в гармонии — я к этому шла.</p>
+        <p class="zapros"><b>С чем пришла:</b> деньги — иду ли я в правильную сторону и где лежат мои финансы; здоровье — на что обратить внимание, что поберечь; отношения — мужу не хватает моего внимания, а как разорваться на всё, не знаю. В остальном чувствую себя на своём месте, только с большим перекосом в работу.</p>
+        <p class="slova">Я не знаю, какие даже слова подобрать. То, что вы делаете, — это уникально, это невозможно объяснить словами. Сейчас у меня настолько всё в гармонии — я к этому шла. А через неделю после нашего разговора я начала ходить на массаж — и мне так полегчало, мне так стало хорошо.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="kadr kadr-vopros">
+  <div class="vnutri">
+    <p class="nad">Вопросы и ответы</p>
+    <h2>О чём меня спрашивают перед сеансом</h2>
+    <p class="pod">Если вашего вопроса здесь нет — напишите в Telegram, отвечу.</p>
+    <div class="spisok">
+      <div class="stolbik">
+        <details open>
+          <summary>Как можно что-то увидеть по фотографии?</summary>
+          <div class="otvet">
+<p>Фотография нужна как адрес: по ней проводник настраивается на вас.</p>
+<p>Наш метод — энергоинформационный гипноз. Я ввожу проводника в гипнотическое состояние, и в нём он видит не события вашей жизни, а причину, которая держит вашу ситуацию. Информация идёт из информационного поля. Работаем вдвоём: я — гипнолог, он — проводник.</p>
+<p>Я не стану доказывать, что метод признан наукой. За ним — 5&nbsp;лет практики и 140+ проведённых сеансов. Посмотрите образец отчёта и отзывы, начните с бесплатной беседы — и решите сами.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Почему мне не нужно участвовать в сеансе?</summary>
+          <div class="otvet">
+<p>Потому что информация считывается по фотографии, а не с ваших слов. Вам не нужно никуда приходить, быть на связи и подстраивать под сеанс свой день.</p>
+<p>Вопросы мы формулируем заранее — вместе, на бесплатной беседе, — и я задаю их за вас. Если после отчёта что-то останется непонятным, я объясню. Это входит в цену.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Что конкретно я получу за 20&nbsp;000&nbsp;₽?</summary>
+          <div class="otvet">
+<p>Одна оплата — за весь сеанс. В неё входит:</p>
+<ul>
+<li>общее состояние: здоровье, отношения, дело и деньги, таланты и предназначение</li>
+<li>ответы на ваши вопросы — чем конкретнее и подробнее вопрос, тем конкретнее ответ</li>
+<li>гармонизация вас, вашего пространства, при необходимости — и самой ситуации</li>
+<li>аудиозапись всего разбора и расшифровка текстом</li>
+<li>рекомендации — что с этим делать дальше</li>
+<li>мои пояснения по записи, если что-то непонятно.</li>
+</ul>
+<p>Сеанс идёт около часа, отчёт вы получаете через 3–7&nbsp;дней. Перед этим — бесплатная беседа 30&nbsp;минут, оплата только после неё.</p>
+          </div>
+        </details>
+        <details>
+          <summary>А если мне скажут что-то тяжёлое?</summary>
+          <div class="otvet">
+<p>В начале сеанса мы всегда смотрим общее состояние человека. Там могут выйти и отклонения по здоровью — я говорю об этом прямо, но это не диагноз и не приговор: если речь о теле, я прошу показаться врачу.</p>
+<p>Я не ищу виноватых и не говорю «вы сами это притянули». Сеанс не заканчивается словами «вот ваша проблема»: в конце всегда гармонизация и рекомендации.</p>
+          </div>
+        </details>
+        <details>
+          <summary>А если вы ошибётесь? Если что-то не совпадёт?</summary>
+          <div class="otvet">
+<p>Я не обещаю стопроцентной точности — обещать такое было бы нечестно.</p>
+<p>Информация идёт из информационного поля, а ясность ответа зависит от вопроса: чем конкретнее и подробнее вы спросите, тем конкретнее будет ответ. Поэтому вопросы мы всегда разбираем и уточняем вместе перед сеансом.</p>
+<p>Если в отчёте что-то вам не откликнулось — просто напишите мне, разберём. Это входит в цену.</p>
+          </div>
+        </details>
+        <details>
+          <summary>А если у меня один конкретный вопрос — про работу или про отношения?</summary>
+          <div class="otvet">
+<p>Приходите с ним. В начале мы в любом случае смотрим общее состояние — здоровье, отношения, дело и деньги, таланты, — потому что причина часто лежит не там, где болит. А дальше отвечаем строго по вашему вопросу.</p>
+<p>Это не удорожает сеанс: общий разбор входит в те же 20&nbsp;000&nbsp;₽.</p>
+          </div>
+        </details>
+      </div>
+      <div class="stolbik">
+        <details>
+          <summary>Что нужно прислать и что будет с моими данными?</summary>
+          <div class="otvet">
+<p>Нужны три вещи: ваша фотография, ФИО и дата рождения, вопросы для разбора. Всё в Telegram.</p>
+<p>Фотография подойдёт любая, даже обычное селфи — главное, чтобы было видно ваше лицо. Фото нужно только для настройки — после сеанса я его удаляю.</p>
+<p>Ваши данные я не передаю никому и никуда не выкладываю. Записи сеансов не публикую никогда, отзывы — только с разрешения и только имя, по желанию клиента.</p>
+          </div>
+        </details>
+        <details>
+          <summary>А если мой вопрос про здоровье?</summary>
+          <div class="otvet">
+<p>Я не врач. Диагнозов не ставлю, лечения не назначаю и медицинскую помощь не заменяю.</p>
+<p>На сеансе видно другое: где тело просит внимания и что за состоянием стоит. Если речь о теле, я всегда прошу показаться врачу — и в отчёте пишу об этом прямо.</p>
+<p>Если симптомы уже беспокоят, идите к врачу сейчас, не дожидаясь сеанса.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Мне нужно во что-то верить, чтобы это сработало?</summary>
+          <div class="otvet">
+<p>Нет. Ко мне приходили откровенные скептики. Артём написал после сеанса: «Относился скептически и не думал, что это может как-то помочь… Жаль, что не сделал этого раньше». Дмитрия удивило, что ему озвучили нюансы, о которых знал только он.</p>
+<p>Вам не нужно ни во что верить, настраиваться и что-либо делать. Вы присылаете фото и вопросы — и получаете отчёт. Дальше судите по тому, что в нём.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Можно заказать разбор для мужа, ребёнка, подруги?</summary>
+          <div class="otvet">
+<p>Я работаю только по просьбе самого человека и только по его вопросам о себе. Разбор за спиной у мужа, взрослого сына или подруги я не делаю — даже из лучших побуждений. Исключение — дети: ребёнка до 14&nbsp;лет смотрю по просьбе родителя.</p>
+<p>Если вы хотите понять, как вам выстроить отношения с близким человеком, — это ваш вопрос о себе, и с ним приходите.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Что мне делать после того, как я получу отчёт?</summary>
+          <div class="otvet">
+<p>Отчёт остаётся у вас: аудиозапись можно переслушивать, расшифровку — перечитывать и возвращаться к рекомендациям.</p>
+<p>Если что-то в записи непонятно — напишите, объясню. Это входит в цену и не ограничено по количеству вопросов.</p>
+<p>Продолжения и «второго этапа» нет: чаще всего хватает одного сеанса. Если через полгода-год появится новая ситуация — возвращайтесь.</p>
+          </div>
+        </details>
       </div>
     </div>
   </div>
@@ -563,24 +822,30 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:13px}
     <div class="setka">
       <div>
         <p class="nad">Дальше</p>
-        <h2>Начнём с разговора</h2>
-        <p class="zov"><b>Спокойно разберём, что у вас происходит</b>, вместе сформулируем ваши вопросы к сеансу, и я расскажу, как он проходит. Голосом или перепиской — как вам удобнее.</p>
+        <h2>Начнём с беседы</h2>
+        <p class="zov"><b>Бесплатная предварительная беседа — 30&nbsp;минут.</b> Голосом или перепиской — как вам удобнее.</p>
+        <ol class="beseda">
+          <li>Вы рассказываете, с чем пришли.</li>
+          <li>Я задаю уточняющие вопросы и объясняю, подходит ли ваш запрос для такого формата работы.</li>
+          <li>Если подходит — вместе формулируем вопросы для сеанса.</li>
+        </ol>
       </div>
       <div class="plashka">
-        <p class="metka">Для сеанса нужно</p>
+        <p class="metka">Для диагностики нужно</p>
         <ul>
           <li>Ваша фотография</li>
           <li>ФИО и дата рождения</li>
           <li>Вопросы, которые хотите разобрать</li>
-          <li>Данные остаются у меня</li>
+          <li>Фото удаляю после сеанса</li>
         </ul>
-        <a class="knopka" href="https://t.me/elvira_valeeva777">Бесплатный разговор 30&nbsp;минут</a>
-        <p class="posle">Сеанс — 20&nbsp;000&nbsp;₽, оплата только после разговора.</p>
+        <a class="knopka" href="https://t.me/elvira_valeeva777">Бесплатная предварительная беседа</a>
+        <p class="posle">30&nbsp;минут. Сеанс — 20&nbsp;000&nbsp;₽, оплата только после беседы.</p>
       </div>
     </div>
   </div>
   <div class="podval">
     <p class="imya">Эльвира Валеева · гипнолог</p>
+    <p>Глубинная диагностика — разбор вашей ситуации по фотографии.</p>
     <p>Работа не заменяет медицинскую и психиатрическую помощь.</p>
     <p><a href="https://t.me/elvira_valeeva777">Telegram</a></p>
   </div>
