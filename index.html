@@ -5,10 +5,41 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <title>Глубинная диагностика · Эльвира Валеева</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="description" content="Разбор вашей ситуации по фотографии. Приходить и говорить о себе вслух не нужно: присылаете фото и вопросы — через 3–7 дней получаете аудиоразбор и расшифровку.">
+<link rel="canonical" href="https://emav777.github.io/elvira-valeeva/">
+
+<!-- Карточка ссылки: как страница выглядит, когда её кидают в Telegram или WhatsApp -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Эльвира Валеева">
+<meta property="og:title" content="Глубинная диагностика · Эльвира Валеева">
+<meta property="og:description" content="Разбор вашей ситуации по фотографии. Приходить и говорить о себе вслух не нужно: присылаете фото и вопросы — через 3–7 дней получаете аудиоразбор и расшифровку.">
+<meta property="og:url" content="https://emav777.github.io/elvira-valeeva/">
+<meta property="og:image" content="https://emav777.github.io/elvira-valeeva/kartochka.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Эльвира Валеева — глубинная диагностика по фотографии">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Значок сайта во вкладке браузера и на домашнем экране телефона -->
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" href="znachok-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="znachok-180.png">
+<meta name="theme-color" content="#FBF7F2">
+<link rel="preload" href="shrifty/inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="shrifty/montserrat.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+/* Шрифты лежат на нашем сервере: страница не зависит от Google */
+@font-face{
+  font-family:"Inter";
+  src:url("shrifty/inter.woff2") format("woff2-variations"),url("shrifty/inter.woff2") format("woff2");
+  font-weight:400 600; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:"Montserrat";
+  src:url("shrifty/montserrat.woff2") format("woff2-variations"),url("shrifty/montserrat.woff2") format("woff2");
+  font-weight:500 600; font-style:normal; font-display:swap;
+}
 :root{
   --krem:#FBF7F2; --bezh:#F3E7DC;
   --temno:#4E3A33; --temno2:#6E5246;
@@ -27,6 +58,7 @@ body{
 }
 h1,h2{font-family:"Montserrat",system-ui,sans-serif;font-weight:600;line-height:1.25;text-wrap:balance}
 img{display:block;max-width:100%}
+.fon-obertka{display:contents}
 a{color:inherit}
 
 /* ——— кадр: один смысловой экран ——— */
@@ -45,7 +77,7 @@ a{color:inherit}
 
 /* текстовая часть */
 .niz{position:relative;z-index:2;flex:1 1 auto;display:flex;flex-direction:column;justify-content:center;padding:4px 20px 24px}
-.verh{font-family:"Montserrat",system-ui,sans-serif;font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-size:13px;color:var(--persik);margin-bottom:14px}
+.verh{font-family:"Montserrat",system-ui,sans-serif;font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-size:14px;color:var(--persik);margin-bottom:14px}
 h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
 .pod-h1{font-size:17px;line-height:1.35;color:var(--persik);margin-bottom:14px}
 .lid{font-size:15.5px;line-height:1.55;color:var(--lid);margin-bottom:20px}
@@ -63,6 +95,11 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
 .knopka:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(165,96,74,.34)}
 .knopka:focus-visible{outline:2px solid var(--persik);outline-offset:4px}
 .podpis{font-size:13.5px;line-height:1.5;color:var(--podpis-temn);margin-top:12px;text-align:center}
+/* Кнопка в середине страницы — сразу после блока с ценой */
+.kadr-cena .zov{margin-top:30px}
+@media (min-width:900px){
+  .kadr-cena .zov{max-width:520px;margin-left:auto;margin-right:auto}
+}
 
 @media (prefers-reduced-motion:reduce){
   .knopka{transition:none}
@@ -113,9 +150,9 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
 .kadr-kto .rol{font-size:16px;color:var(--lid-temn);margin-bottom:14px}
 .kadr-kto .cifry{display:flex;gap:20px;padding:13px 0;border-top:1px solid var(--temno2);border-bottom:1px solid var(--temno2);margin-bottom:15px}
 .kadr-kto .cifra b{display:block;font-family:"Montserrat",system-ui,sans-serif;font-weight:600;font-size:24px;color:var(--persik);line-height:1.1}
-.kadr-kto .cifra span{display:block;font-size:12.5px;line-height:1.3;color:var(--podpis-temn)}
+.kadr-kto .cifra span{display:block;font-size:14px;line-height:1.3;color:var(--podpis-temn)}
 .kadr-kto p.tekst{font-size:15.5px;line-height:1.55;color:var(--lid);margin-bottom:10px}
-.kadr-kto .uchoba{margin-top:12px;font-size:12.5px;line-height:1.45;color:var(--podpis-temn)}
+.kadr-kto .uchoba{margin-top:12px;font-size:14px;line-height:1.45;color:var(--podpis-temn)}
 .kadr-kto .uchoba b{font-weight:600;color:var(--lid-temn)}
 
 /* ——— широкий экран ——— */
@@ -198,7 +235,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
   .kadr-kto .cifry{padding:14px 0;margin-bottom:16px}
   .kadr-kto .cifra b{font-size:26px}
   .kadr-kto p.tekst{font-size:16px;margin-bottom:10px}
-  .kadr-kto .uchoba{margin-top:14px;font-size:13px}
+  .kadr-kto .uchoba{margin-top:14px;font-size:14.5px}
 }
 /* телефон: блоки по высоте текста, экран не прыгает */
 @media (max-width:899px){
@@ -217,7 +254,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
 .kadr-sfery .stroka span{font-size:14.5px;line-height:1.45;color:var(--tekst-myag)}
 .kadr-sfery .stroka.eshe b{color:var(--terra)}
 .kadr-sfery .plashka{background:var(--terra);color:var(--krem);border-radius:22px;padding:20px}
-.kadr-sfery .plashka .metka{font-family:"Montserrat",system-ui,sans-serif;font-weight:500;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--persik-svet);margin:0 0 12px}
+.kadr-sfery .plashka .metka{font-family:"Montserrat",system-ui,sans-serif;font-weight:500;font-size:13.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--persik-svet);margin:0 0 12px}
 .kadr-sfery .plashka ul{list-style:none;display:grid;gap:9px;margin:0;padding:0}
 .kadr-sfery .plashka li{position:relative;padding-left:22px;font-size:15.5px;line-height:1.45;color:var(--krem-tepl)}
 .kadr-sfery .plashka li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--persik-svet)}
@@ -255,7 +292,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
 .kadr-cena .pochemu li{border-top:1px solid var(--temno2);padding-top:11px;font-size:15px;line-height:1.5;color:var(--lid)}
 .kadr-cena .pochemu li b{display:block;font-family:"Montserrat",system-ui,sans-serif;font-weight:600;font-size:17px;line-height:1.25;color:var(--krem);margin-bottom:4px}
 .kadr-cena .plashka{background:var(--terra);color:var(--krem);border-radius:22px;padding:20px}
-.kadr-cena .plashka .metka{font-family:"Montserrat",system-ui,sans-serif;font-weight:500;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--persik-svet);margin:0 0 12px}
+.kadr-cena .plashka .metka{font-family:"Montserrat",system-ui,sans-serif;font-weight:500;font-size:13.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--persik-svet);margin:0 0 12px}
 .kadr-cena .plashka ul{list-style:none;display:grid;gap:9px;margin:0;padding:0}
 .kadr-cena .plashka li{position:relative;padding-left:22px;font-size:15.5px;line-height:1.45;color:var(--krem-tepl)}
 .kadr-cena .plashka li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--persik-svet)}
@@ -293,7 +330,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
 .kadr-obrazec .dve{display:grid;gap:20px;align-items:start}
 .kadr-obrazec .karta{background:var(--krem);border:1px solid var(--liniya);border-radius:18px;padding:18px 20px}
 .kadr-obrazec .karta+.karta{margin-top:14px}
-.kadr-obrazec .metka{font-family:"Montserrat",system-ui,sans-serif;font-weight:500;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--terra);margin:0 0 12px}
+.kadr-obrazec .metka{font-family:"Montserrat",system-ui,sans-serif;font-weight:500;font-size:13.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--terra);margin:0 0 12px}
 .kadr-obrazec .karta ul{list-style:none;display:grid;gap:9px;margin:0;padding:0}
 .kadr-obrazec .karta li{position:relative;padding-left:22px;font-size:15.5px;line-height:1.45;color:var(--tekst-myag)}
 .kadr-obrazec .karta li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--terra)}
@@ -377,17 +414,17 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
 .kadr-final .beseda li::before{content:counter(shag);position:absolute;left:0;top:.02em;width:24px;height:24px;border-radius:50%;background:var(--terra);color:var(--krem);font-family:"Montserrat",system-ui,sans-serif;font-weight:600;font-size:13px;line-height:24px;text-align:center}
 .kadr-final .setka{display:grid;gap:22px}
 .kadr-final .plashka{background:var(--bezh);border:1px solid var(--liniya);border-radius:22px;padding:22px 20px}
-.kadr-final .plashka .metka{font-family:"Montserrat",system-ui,sans-serif;font-weight:500;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--terra);margin-bottom:12px}
+.kadr-final .plashka .metka{font-family:"Montserrat",system-ui,sans-serif;font-weight:500;font-size:13.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--terra);margin-bottom:12px}
 .kadr-final .plashka ul{list-style:none;display:grid;gap:9px;margin:0 0 20px}
 .kadr-final .plashka li{position:relative;padding-left:22px;font-size:15.5px;line-height:1.45;color:var(--tekst)}
 .kadr-final .plashka li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--terra)}
 .kadr-final .knopka{display:block;background:var(--terra);color:var(--krem);box-shadow:0 12px 28px rgba(165,96,74,.28)}
 .kadr-final .knopka:hover{box-shadow:0 16px 34px rgba(165,96,74,.34)}
-.kadr-final .posle{font-size:13.5px;line-height:1.5;color:var(--tekst-myag);margin-top:12px;text-align:center}
+.kadr-final .posle{font-size:14.5px;line-height:1.5;color:var(--tekst-myag);margin-top:12px;text-align:center}
 .kadr-final .podval{position:absolute;left:0;right:0;bottom:0;padding:16px 20px 20px;border-top:1px solid var(--liniya);display:grid;gap:5px}
-.kadr-final .podval p{font-size:12.5px;line-height:1.45;color:var(--tekst-myag);margin:0}
-.kadr-final .podval .imya{font-family:"Montserrat",system-ui,sans-serif;font-weight:600;font-size:13.5px;color:var(--tekst)}
-.kadr-final .podval a{color:var(--terra)}
+.kadr-final .podval p{font-size:14px;line-height:1.45;color:var(--tekst-myag);margin:0}
+.kadr-final .podval .imya{font-family:"Montserrat",system-ui,sans-serif;font-weight:600;font-size:14.5px;color:var(--tekst)}
+.kadr-final .podval a{color:var(--terra);display:inline-block;padding:12px 4px}
 @media (min-width:900px){
   .kadr-final{flex-direction:column;justify-content:center;padding:80px 48px 128px}
   .kadr-final .setka{grid-template-columns:52fr 48fr;gap:48px;align-items:center}
@@ -402,7 +439,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
   .kadr-final .plashka li{font-size:18px;padding-left:26px}
   .kadr-final .knopka{display:block;text-align:center;padding-left:40px;padding-right:40px}
   .kadr-final .podval{padding:20px 48px 24px;display:flex;justify-content:space-between;align-items:baseline;gap:24px}
-  .kadr-final .podval p{font-size:13.5px}
+  .kadr-final .podval p{font-size:14.5px}
 }
 @media (min-width:900px) and (max-height:780px){
   .kadr-final{padding:36px 48px 104px}
@@ -465,7 +502,10 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
 
 <section class="kadr">
   <div class="foto-verh">
-    <img class="fon" src="foto.jpg" alt="Эльвира Валеева">
+    <picture class="fon-obertka">
+      <source type="image/webp" srcset="foto-640.webp 640w, foto-900.webp 900w, foto-1254.webp 1254w" sizes="(min-width:900px) 50vw, 100vw">
+      <img class="fon" src="foto-900.jpg" srcset="foto-640.jpg 640w, foto-900.jpg 900w, foto-1254.jpg 1254w" sizes="(min-width:900px) 50vw, 100vw" width="1254" height="1254" fetchpriority="high" alt="Эльвира Валеева">
+    </picture>
     <div class="vual"></div>
   </div>
   <div class="niz">
@@ -568,7 +608,10 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
 
 <section class="kadr kadr-kto">
   <div class="vnutri">
-    <div class="foto"><img src="foto-kto-ya.jpg" alt="Эльвира Валеева"></div>
+    <div class="foto"><picture class="fon-obertka">
+      <source type="image/webp" srcset="foto-kto-ya-560.webp 560w, foto-kto-ya-800.webp 800w, foto-kto-ya-1024.webp 1024w" sizes="(min-width:900px) 50vw, 100vw">
+      <img src="foto-kto-ya-800.jpg" srcset="foto-kto-ya-560.jpg 560w, foto-kto-ya-800.jpg 800w, foto-kto-ya-1024.jpg 1024w" sizes="(min-width:900px) 50vw, 100vw" width="1024" height="1024" loading="lazy" decoding="async" alt="Эльвира Валеева">
+    </picture></div>
     <div class="slova">
       <p class="nad">Кто я</p>
       <h2 class="imya">Эльвира Валеева</h2>
@@ -682,6 +725,10 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
         </ul>
         <p class="snachala"><b>Сначала — бесплатная предварительная беседа, 30&nbsp;минут.</b> Вы рассказываете, с чем пришли; я задаю уточняющие вопросы и объясняю, подходит ли ваш запрос для такого формата работы. Если подходит — вместе формулируем вопросы для сеанса. Оплата только после беседы.</p>
       </div>
+    </div>
+    <div class="zov">
+      <a class="knopka" href="https://t.me/elvira_valeeva777">Бесплатная предварительная беседа</a>
+      <p class="podpis">30&nbsp;минут, бесплатно. Решим, подходит ли вам такой формат, — и только потом оплата.</p>
     </div>
   </div>
 </section>

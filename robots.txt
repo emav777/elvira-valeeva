@@ -1,2 +1,24 @@
+# Поисковикам сайт пока закрыт — откроем, когда Эльвира решит.
+# А сборщикам карточек ссылок вход открыт, иначе в Telegram и WhatsApp
+# ссылка выглядит голой строкой без картинки и описания.
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: vkShare
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: Discordbot
+Allow: /
+
 User-agent: *
 Disallow: /
