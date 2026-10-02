@@ -122,6 +122,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
 .glavnoe{background:var(--terra);color:var(--krem);border-radius:22px;padding:32px 24px;margin-bottom:26px}
 .glavnoe .fraza{font-family:"Montserrat",system-ui,sans-serif;font-weight:600;font-size:29px;line-height:1.22;letter-spacing:-.012em;margin-bottom:12px}
 .glavnoe p{font-size:16.5px;line-height:1.55;color:var(--krem-tepl)}
+.glavnoe p+p{margin-top:10px}
 .dop{display:grid;gap:26px}
 .dop div{border-top:1px solid var(--liniya);padding-top:18px}
 .dop h3{font-family:"Montserrat",system-ui,sans-serif;font-weight:600;font-size:21px;line-height:1.25;color:var(--terra);margin:0 0 12px}
@@ -287,6 +288,8 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
 .kadr-cena h2{font-size:29px;letter-spacing:-.012em;margin-bottom:10px}
 .kadr-cena .summa{font-family:"Montserrat",system-ui,sans-serif;font-weight:600;font-size:44px;line-height:1.05;letter-spacing:-.02em;color:var(--persik);margin:0 0 6px}
 .kadr-cena .za{font-size:15px;line-height:1.5;color:var(--podpis-temn);margin:0 0 22px}
+.kadr-cena .za:has(+.za-ne){margin-bottom:10px}
+.kadr-cena .za-ne{color:var(--krem-tepl)}
 .kadr-cena .dve{display:grid;gap:20px;align-items:start}
 .kadr-cena .pochemu{display:grid;gap:12px;margin:0;padding:0;list-style:none}
 .kadr-cena .pochemu li{border-top:1px solid var(--temno2);padding-top:11px;font-size:15px;line-height:1.5;color:var(--lid)}
@@ -547,6 +550,27 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
   .kadr-stranicy .frag>div:nth-child(2){order:1}
   .kadr-stranicy .list{font-size:14.5px}
 }
+.kadr-unosite{justify-content:center;padding:44px 20px;background:var(--bezh);color:var(--tekst)}
+.kadr-unosite h2{font-size:29px;letter-spacing:-.012em;margin-bottom:18px}
+.kadr-unosite .unos{list-style:none;margin:0;padding:0;display:grid;gap:14px;counter-reset:u}
+.kadr-unosite .unos li{position:relative;padding:14px 0 0 44px;border-top:1px solid var(--liniya);font-size:16.5px;line-height:1.5;color:var(--tekst-myag)}
+.kadr-unosite .unos li::before{counter-increment:u;content:counter(u);position:absolute;left:0;top:12px;width:30px;height:30px;border-radius:50%;background:var(--terra);color:var(--krem);font:600 15px/30px "Montserrat",system-ui,sans-serif;text-align:center}
+.kadr-unosite .unos b{color:var(--tekst);font-weight:600}
+.kadr-unosite .ne-podoydet{margin-top:30px;background:var(--krem);border-left:4px solid var(--terra);border-radius:14px;padding:20px 20px}
+.kadr-unosite .ne-podoydet h3{font-family:"Montserrat",system-ui,sans-serif;font-weight:600;font-size:21px;line-height:1.25;color:var(--terra);margin:0 0 10px}
+.kadr-unosite .ne-podoydet p{font-size:16px;line-height:1.55;color:var(--tekst-myag);margin:0}
+.kadr-unosite .ne-podoydet p+p{margin-top:8px}
+@media (max-width:899px){.kadr-unosite{min-height:auto}}
+@media (min-width:900px){
+  .kadr-unosite{flex-direction:column;justify-content:center;padding:80px 48px}
+  .kadr-unosite h2{font-size:40px;margin-bottom:26px}
+  .kadr-unosite .unos{grid-template-columns:1fr 1fr;gap:22px 44px}
+  .kadr-unosite .unos li{font-size:18px;padding-top:18px}
+  .kadr-unosite .unos li::before{top:16px}
+  .kadr-unosite .ne-podoydet{margin-top:44px;padding:28px 34px}
+  .kadr-unosite .ne-podoydet h3{font-size:26px}
+  .kadr-unosite .ne-podoydet p{font-size:17px;max-width:70ch}
+}
 </style>
 </head>
 <body>
@@ -564,8 +588,8 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
     <h1>Глубинная диагностика по&nbsp;фотографии</h1>
     <p class="pod-h1">Для тех, кто снова и снова попадает в одну и ту же ситуацию — в отношениях, деньгах, работе или важном решении — и хочет понять, что за ней стоит.</p>
     <p class="lid"><b>Вы присылаете фото и вопросы.</b> Я работаю с проводником в гипнозе, вам присутствовать не нужно. Через 3–7&nbsp;дней — аудиозапись разбора, расшифровка и рекомендации.</p>
-    <a class="knopka" href="https://t.me/elvira_valeeva777">30 минут бесплатно: разберём ваш запрос</a>
-    <p class="podpis">Скажу честно, подходит ли вам формат. Платить — только после беседы.</p>
+    <a class="knopka" href="https://t.me/elvira_valeeva777">Обсудить мой случай бесплатно</a>
+    <p class="podpis">30 минут · без оплаты · скажу честно, подходит ли вам формат. Платить — только после беседы.</p>
   </div>
 </section>
 
@@ -596,7 +620,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
     <p class="nad">Чем отличается</p>
     <div class="glavnoe">
       <h2 class="fraza">Причина, а не утешение</h2>
-      <p>Я не подбадриваю и не пересказываю то, что вы и так знаете. Мы честно, но бережно смотрим, что стоит за вашей ситуацией, — без приговоров и страшных диагнозов.</p>
+      <p>Я не подбадриваю и не пересказываю то, что вы и так знаете.</p><p>Вы приходите не за советом «соберитесь и действуйте». Сначала мы ищем, почему одна и та же ситуация повторяется, а потом разбираем ваши конкретные вопросы — без приговоров и страшных диагнозов.</p>
     </div>
     <div class="dop">
       <div>
@@ -605,7 +629,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
       </div>
       <div>
         <h3>В конце — гармонизация</h3>
-        <p>В завершение я гармонизирую вас, ваше пространство, а при необходимости и саму ситуацию.</p>
+        <p>В завершение я гармонизирую вас, ваше пространство, а при необходимости и саму ситуацию. Обычно уходят нервозность и стресс, появляется ясность в мыслях и действиях.</p>
       </div>
     </div>
   </div>
@@ -666,7 +690,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
     <div class="slova">
       <p class="nad">Кто я</p>
       <h2 class="imya">Эльвира Валеева</h2>
-      <p class="rol">Гипнолог, аналитик слепых зон</p>
+      <p class="rol">Гипнолог. Глубинная диагностика по фотографии</p>
       <div class="cifry">
         <div class="cifra"><b>5&nbsp;лет</b><span>практики</span></div>
         <div class="cifra"><b>140+</b><span>проведённых сеансов</span></div>
@@ -762,7 +786,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
 <p>Показатели ниже оптимальных, энергии и вибраций недостаточно.</p>
 <h5>Главная задача души в этом воплощении:</h5>
 <ul><li>Нести баланс, справедливость и духовные знания в земную жизнь.</li>
-<li>Удерживать равновесие в решениях и служить примером честного, экологичного выбора.</li></ul></div><p class="snoska">Цифры — моя оценка состояния по ходу сеанса, а не измерение прибором. Важнее сравнение: к концу сеанса показатели поднялись до 2000 и 250.</p></div><div><p class="podp">Итоговые рекомендации · стр. 14–15 из 15</p><div class="list"><h4>9. Итоговые рекомендации</h4>
+<li>Удерживать равновесие в решениях и служить примером честного, экологичного выбора.</li></ul></div><p class="snoska">Энергия и вибрации — условная шкала, по которой я отслеживаю состояние во время сеанса. Это не медицинский и не научный показатель. К концу сеанса они поднялись до 2000 и 250.</p></div><div><p class="podp">Итоговые рекомендации · стр. 14–15 из 15</p><div class="list"><h4>9. Итоговые рекомендации</h4>
 <p><b>1. Успокоение ума</b></p>
 <ul><li>Ежедневное ритмичное дыхание с визуализацией.</li></ul>
 <p><b>2. Здоровье и тело</b></p>
@@ -801,6 +825,24 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
 </section>
 
 
+<section class="kadr kadr-unosite">
+  <div class="vnutri">
+    <p class="nad">Результат</p>
+    <h2>Что вы уносите с собой</h2>
+    <ol class="unos">
+      <li><b>Понимание,</b> почему ситуация повторяется и что её держит.</li>
+      <li><b>Ответы на ваши вопросы:</b> про отношения, деньги, работу или решение, которое вы откладываете.</li>
+      <li><b>Конкретные шаги:</b> что делать в ближайшее время и от чего лучше отказаться.</li>
+      <li><b>Запись и текст,</b> к которым можно вернуться, когда снова окажетесь в похожей ситуации.</li>
+    </ol>
+    <div class="ne-podoydet">
+      <h3>Кому этот формат не подойдёт</h3>
+      <p>Не приходите ко мне за медицинским диагнозом, гарантированным прогнозом или готовым решением за вас. Я не врач, не предсказываю будущее и не решаю вместо вас.</p>
+      <p>Этот формат — для тех, кто хочет понять повторяющуюся ситуацию, посмотреть на неё по-другому и самому решить, что делать.</p>
+    </div>
+  </div>
+</section>
+
 <section class="kadr kadr-cena">
   <div class="vnutri">
     <p class="nad">Цена</p>
@@ -809,8 +851,9 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
       <div>
         <p class="summa">20&nbsp;000&nbsp;₽</p>
         <p class="za">Одна оплата за весь сеанс. Без продолжений, подписок и доплат за «второй этап».</p>
+        <p class="za za-ne">Это не оплата за час разговора. Вы оплачиваете весь процесс: беседу, работу двух специалистов, разбор, запись, расшифровку и рекомендации.</p>
         <ul class="pochemu">
-          <li><b>Час работы — по всем сферам сразу</b>Сначала проходим все ваши сферы — от здоровья до предназначения, потом я задаю ваши вопросы, в конце — гармонизация.</li>
+          <li><b>Один полный разбор вместо серии консультаций</b>Сначала проходим все ваши сферы — от здоровья до предназначения, потом я задаю ваши вопросы, в конце — гармонизация.</li>
           <li><b>Работают двое — я и проводник</b>Поэтому за один сеанс успеваем пройти всё, а не разбирать по одному вопросу за встречу.</li>
           <li><b>Вам не нужно присутствовать</b>Вы не тратите на сеанс ни часа своего времени — только присылаете фото и вопросы.</li>
         </ul>
@@ -829,8 +872,8 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
       </div>
     </div>
     <div class="zov">
-      <a class="knopka" href="https://t.me/elvira_valeeva777">30 минут бесплатно: разберём ваш запрос</a>
-      <p class="podpis">Скажу честно, подходит ли вам формат. Платить — только после беседы.</p>
+      <a class="knopka" href="https://t.me/elvira_valeeva777">Обсудить мой случай бесплатно</a>
+      <p class="podpis">30 минут · без оплаты · скажу честно, подходит ли вам формат. Платить — только после беседы.</p>
     </div>
   </div>
 </section>
@@ -992,8 +1035,8 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
           <li>Вопросы, которые хотите разобрать</li>
           <li>Фото удаляю после сеанса</li>
         </ul>
-        <a class="knopka" href="https://t.me/elvira_valeeva777">30 минут бесплатно: разберём ваш запрос</a>
-        <p class="posle">Скажу честно, подходит ли вам формат. Сеанс — 20&nbsp;000&nbsp;₽, платить только после беседы.</p>
+        <a class="knopka" href="https://t.me/elvira_valeeva777">Обсудить мой случай бесплатно</a>
+        <p class="posle">30 минут · без оплаты · скажу честно, подходит ли вам формат. Сеанс — 20&nbsp;000&nbsp;₽, платить только после беседы.</p>
       </div>
     </div>
   </div>
