@@ -534,14 +534,11 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
 .kadr-stranicy .podp{font-family:"Montserrat",system-ui,sans-serif;font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--terra);margin:0 0 8px}
 /* вариант Б: фрагменты с подписями, друг под другом */
 .kadr-stranicy .frag{display:grid;gap:18px}
-.kadr-stranicy .frag .list{max-height:270px;overflow:hidden;position:relative}
-.kadr-stranicy .frag .list::after{content:"";position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(transparent,#fff)}
 @media (max-width:899px){.kadr-stranicy{min-height:auto}}
 @media (min-width:900px){
   .kadr-stranicy{padding:80px 48px}
   .kadr-stranicy h2{font-size:40px}
   .kadr-stranicy .frag{grid-template-columns:1fr 1fr;gap:22px}
-  .kadr-stranicy .frag .list{max-height:300px;font-size:12.5px}
 }
 </style>
 </head>
