@@ -241,45 +241,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
 /* телефон: блоки по высоте текста, экран не прыгает */
 @media (max-width:899px){
   .kadr-rechi .rechi{gap:30px}
-  .kadr-rechi,.kadr-otlichie,.kadr-put,.kadr-sfery,.kadr-obrazec,.kadr-cena,.kadr-otzyvy,.kadr-vopros,.kadr-final{min-height:auto}
-}
-
-/* ——— кадр 6: с чем работаю ——— */
-.kadr-sfery{justify-content:center;padding:44px 20px;background:var(--krem);color:var(--tekst)}
-.kadr-sfery h2{font-size:29px;letter-spacing:-.012em;margin-bottom:12px}
-.kadr-sfery .dve{display:grid;gap:20px;align-items:start}
-.kadr-sfery .spisok-sfer{display:grid}
-.kadr-sfery .stroka{border-top:1px solid var(--liniya);padding:11px 0;display:flex;flex-direction:column;gap:10px}
-.kadr-sfery .stroka:last-child{border-bottom:1px solid var(--liniya)}
-.kadr-sfery .stroka b{font-family:"Montserrat",system-ui,sans-serif;font-weight:600;font-size:21px;line-height:1.2;color:var(--tekst)}
-.kadr-sfery .stroka span{font-size:14.5px;line-height:1.45;color:var(--tekst-myag)}
-.kadr-sfery .stroka.eshe b{color:var(--terra)}
-.kadr-sfery .plashka{background:var(--terra);color:var(--krem);border-radius:22px;padding:20px}
-.kadr-sfery .plashka .metka{font-family:"Montserrat",system-ui,sans-serif;font-weight:500;font-size:13.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--persik-svet);margin:0 0 12px}
-.kadr-sfery .plashka ul{list-style:none;display:grid;gap:9px;margin:0;padding:0}
-.kadr-sfery .plashka li{position:relative;padding-left:22px;font-size:15.5px;line-height:1.45;color:var(--krem-tepl)}
-.kadr-sfery .plashka li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--persik-svet)}
-@media (min-width:900px){
-  .kadr-sfery{flex-direction:column;justify-content:center;padding:80px 48px}
-  .kadr-sfery h2{font-size:44px}
-  .kadr-sfery .pod{font-size:19px;margin-bottom:46px}
-  .kadr-sfery .dve{grid-template-columns:56fr 44fr;gap:44px}
-  .kadr-sfery .stroka{flex-direction:row;padding:20px 0;gap:18px;align-items:baseline}
-  .kadr-sfery .stroka b{font-size:30px;flex:none;min-width:5.5em}
-  .kadr-sfery .stroka span{font-size:16.5px}
-  .kadr-sfery .plashka{padding:40px 36px;border-radius:26px}
-  .kadr-sfery .plashka .metka{margin-bottom:14px}
-  .kadr-sfery .plashka ul{gap:14px}
-  .kadr-sfery .plashka li{font-size:18px;padding-left:26px}
-}
-@media (min-width:900px) and (max-height:780px){
-  .kadr-sfery{padding:36px 48px}
-  .kadr-sfery h2{font-size:34px}
-  .kadr-sfery .pod{font-size:17px;margin-bottom:26px}
-  .kadr-sfery .stroka{padding:14px 0}
-  .kadr-sfery .stroka b{font-size:25px}
-  .kadr-sfery .plashka{padding:28px 30px}
-  .kadr-sfery .plashka li{font-size:16.5px}
+  .kadr-rechi,.kadr-otlichie,.kadr-put,.kadr-obrazec,.kadr-cena,.kadr-otzyvy,.kadr-vopros,.kadr-final{min-height:auto}
 }
 
 /* ——— кадр 8: сколько стоит ——— */
@@ -333,6 +295,10 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
 .kadr-obrazec .dve{display:grid;gap:20px;align-items:start}
 .kadr-obrazec .karta{background:var(--krem);border:1px solid var(--liniya);border-radius:18px;padding:18px 20px}
 .kadr-obrazec .karta+.karta{margin-top:14px}
+.kadr-obrazec summary.metka{cursor:pointer;list-style:none}
+.kadr-obrazec summary.metka::-webkit-details-marker{display:none}
+.kadr-obrazec summary.metka::after{content:" ▾"}
+.kadr-obrazec .razdely[open] summary.metka::after{content:" ▴"}
 .kadr-obrazec .metka{font-family:"Montserrat",system-ui,sans-serif;font-weight:500;font-size:13.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--terra);margin:0 0 12px}
 .kadr-obrazec .karta ul{list-style:none;display:grid;gap:9px;margin:0;padding:0}
 .kadr-obrazec .karta li{position:relative;padding-left:22px;font-size:15.5px;line-height:1.45;color:var(--tekst-myag)}
@@ -412,6 +378,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
 .kadr-final h2{font-size:29px;letter-spacing:-.012em;margin-bottom:12px}
 .kadr-final .zov{font-size:15.5px;line-height:1.55;color:var(--tekst-myag);margin:0}
 .kadr-final .zov b{color:var(--terra);font-weight:600}
+.kadr-final .beseda-tekst{margin:16px 0 0;font-size:15px;line-height:1.5;color:var(--tekst-myag)}
 .kadr-final .beseda{list-style:none;counter-reset:shag;display:grid;gap:10px;margin:16px 0 0;padding:0}
 .kadr-final .beseda li{counter-increment:shag;position:relative;padding-left:32px;font-size:15px;line-height:1.5;color:var(--tekst-myag)}
 .kadr-final .beseda li::before{content:counter(shag);position:absolute;left:0;top:.02em;width:24px;height:24px;border-radius:50%;background:var(--terra);color:var(--krem);font-family:"Montserrat",system-ui,sans-serif;font-weight:600;font-size:13px;line-height:24px;text-align:center}
@@ -434,6 +401,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
   .kadr-final h2{font-size:44px;margin-bottom:18px}
   .kadr-final .zov{font-size:19px;max-width:32ch}
   .kadr-final .beseda{gap:13px;margin-top:22px}
+  .kadr-final .beseda-tekst{font-size:17px;margin-top:22px;max-width:40ch}
   .kadr-final .beseda li{font-size:17px;padding-left:38px;max-width:40ch}
   .kadr-final .beseda li::before{width:28px;height:28px;font-size:14.5px;line-height:28px}
   .kadr-final .plashka{padding:40px 36px;border-radius:26px}
@@ -639,7 +607,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
   <div class="vnutri">
     <p class="nad">Как это проходит</p>
     <h2>Что мы делаем — и как</h2>
-    <p class="pod"><b>Глубинная диагностика — это один сеанс, на котором мы смотрим вашу ситуацию по фотографии.</b> Наш метод — энергоинформационный гипноз. Я ввожу в гипноз проводника, и в этом состоянии он видит вашу ситуацию по фотографии: не события, а причину, которая держит вашу ситуацию. Я живу в Афинах, проводник — в Риге, мы работаем вдвоём по телефону. Вам в это время ничего делать не нужно.</p>
+    <p class="pod">Наш метод — энергоинформационный гипноз. Я ввожу в гипноз проводника, и в этом состоянии он видит вашу ситуацию по фотографии: не события, а причину, которая держит вашу ситуацию. Я живу в Афинах, проводник — в Риге, мы работаем вдвоём по телефону. Вам в это время ничего делать не нужно.</p>
     <div class="shagi">
       <div class="shag">
         <p class="nomer">1</p>
@@ -677,7 +645,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
         </div>
       </div>
     </div>
-    <p class="tajna"><b>О конфиденциальности:</b> фото нужно только для настройки — после сеанса я его удаляю. Ваши данные я не передаю никому и никуда не выкладываю. Записи сеансов я не публикую никогда.</p>
+    <p class="tajna"><b>О конфиденциальности:</b> фото удаляю после сеанса, данные и записи никому не передаю.</p>
   </div>
 </section>
 
@@ -696,38 +664,11 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
         <div class="cifra"><b>140+</b><span>проведённых сеансов</span></div>
         <div class="cifra"><b>Удалённо</b><span>люди из разных стран</span></div>
       </div>
-      <p class="tekst">Я не даю советов и не веду курсы. Мы разбираем вашу ситуацию по всем сферам сразу, а не по одному вопросу.</p>
-      <p class="tekst">Если через полгода-год появится новая ситуация — вернёмся.</p>
+      <p class="tekst">Я не даю советов и не веду курсы.</p>
       <p class="uchoba"><b>Обучение:</b> сертификат Международной ассоциации энергоинформационного гипноза, Санкт-Петербург. Сертификат «Нейрографика», базовый уровень — Институт психологии творчества Павла Пискарёва, 2022.</p>
     </div>
   </div>
 </section>
-
-<section class="kadr kadr-sfery">
-  <div class="vnutri">
-    <p class="nad">С чем работаю</p>
-    <h2>За один сеанс — все ваши сферы</h2>
-    <p class="pod">Чаще всего приходят с этим.</p>
-    <div class="dve">
-      <div class="spisok-sfer">
-        <div class="stroka"><b>Здоровье</b><span>Самочувствие и состояния, которые возвращаются снова и снова</span></div>
-        <div class="stroka"><b>Отношения</b><span>Семья, партнёр, дети, близкое окружение</span></div>
-        <div class="stroka"><b>Дело и деньги</b><span>Работа, бизнес, решения, которые не даются</span></div>
-        <div class="stroka"><b>Таланты</b><span>Скрытые возможности и ваше предназначение</span></div>
-        <div class="stroka eshe"><b>И не только</b><span>Приносите ту ситуацию, которая беспокоит вас сейчас</span></div>
-      </div>
-      <div class="plashka">
-        <p class="metka">Порядок сеанса</p>
-        <ul>
-          <li>Сначала смотрим все сферы и находим причины</li>
-          <li>Потом я задаю ваши вопросы, отвечает проводник</li>
-          <li>В конце — гармонизация и рекомендации</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
 
 <section class="kadr kadr-obrazec">
   <div class="vnutri">
@@ -754,7 +695,8 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
         </div>
       </div>
       <div class="plashka">
-        <p class="metka">Что в отчёте по порядку</p>
+        <details class="razdely">
+        <summary class="metka">Все 7 разделов отчёта</summary>
         <ul>
           <li>Общее состояние и тип души</li>
           <li>Мысли, эмоции и работа ума</li>
@@ -764,6 +706,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
           <li>Предназначение и способности</li>
           <li>Гармонизация и итоговые рекомендации</li>
         </ul>
+        </details>
         <p class="snoska"><b>Объём:</b> у Андрея расшифровка вышла на 15&nbsp;страниц.</p>
         <p class="snoska">Работа не заменяет медицинскую и психиатрическую помощь: если речь о теле, я прошу показаться врачу.</p>
       </div>
@@ -786,7 +729,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
 <p>Показатели ниже оптимальных, энергии и вибраций недостаточно.</p>
 <h5>Главная задача души в этом воплощении:</h5>
 <ul><li>Нести баланс, справедливость и духовные знания в земную жизнь.</li>
-<li>Удерживать равновесие в решениях и служить примером честного, экологичного выбора.</li></ul></div><p class="snoska">Энергия и вибрации — условная шкала, по которой я отслеживаю состояние во время сеанса. Это не медицинский и не научный показатель. К концу сеанса они поднялись до 2000 и 250.</p></div><div><p class="podp">Итоговые рекомендации · стр. 14–15 из 15</p><div class="list"><h4>9. Итоговые рекомендации</h4>
+<li>Удерживать равновесие в решениях и служить примером честного, экологичного выбора.</li></ul></div><p class="snoska">Энергия и вибрации — условная шкала, по которой я отслеживаю состояние во время сеанса. Это не медицинский и не научный показатель. К концу сеанса они поднялись до 2000 и 250.</p></div><div class="skr-list"><p class="podp">Итоговые рекомендации · стр. 14–15 из 15</p><div class="list"><h4>9. Итоговые рекомендации</h4>
 <p><b>1. Успокоение ума</b></p>
 <ul><li>Ежедневное ритмичное дыхание с визуализацией.</li></ul>
 <p><b>2. Здоровье и тело</b></p>
@@ -820,7 +763,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
 <h5>Рекомендация:</h5>
 <ul><li>ориентироваться на те сферы, где можно использовать психологические и коммуникативные способности,</li>
 <li>избегать мест, где требуется тяжёлый физический труд или включение в сомнительные финансовые схемы.</li></ul></div></div></div>
-    <button type="button" class="esche" onclick="this.closest('.kadr-stranicy').classList.add('otkryto')">Показать ещё 2 страницы</button>
+    <button type="button" class="esche" onclick="this.closest('.kadr-stranicy').classList.add('otkryto')">Показать ещё 3 страницы</button>
   </div>
 </section>
 
@@ -855,7 +798,6 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
         <ul class="pochemu">
           <li><b>Один полный разбор вместо серии консультаций</b>Сначала проходим все ваши сферы — от здоровья до предназначения, потом я задаю ваши вопросы, в конце — гармонизация.</li>
           <li><b>Работают двое — я и проводник</b>Поэтому за один сеанс успеваем пройти всё, а не разбирать по одному вопросу за встречу.</li>
-          <li><b>Вам не нужно присутствовать</b>Вы не тратите на сеанс ни часа своего времени — только присылаете фото и вопросы.</li>
         </ul>
       </div>
       <div class="plashka">
@@ -1021,11 +963,7 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
         <p class="nad">Дальше</p>
         <h2>Начнём с беседы</h2>
         <p class="zov"><b>30&nbsp;минут бесплатно: разберём ваш запрос.</b> Голосом или перепиской — как вам удобнее.</p>
-        <ol class="beseda">
-          <li>Вы рассказываете, с чем пришли.</li>
-          <li>Я задаю уточняющие вопросы и объясняю, подходит ли ваш запрос для такого формата работы.</li>
-          <li>Если подходит — вместе формулируем вопросы для сеанса.</li>
-        </ol>
+        <p class="beseda-tekst">Вы рассказываете, с чем пришли, а я честно говорю, подходит ли ваш запрос для такого формата. Если подходит — вместе формулируем вопросы для сеанса.</p>
       </div>
       <div class="plashka">
         <p class="metka">Для диагностики нужно</p>
