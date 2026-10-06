@@ -311,7 +311,9 @@ h1{font-size:30px;line-height:1.14;letter-spacing:-.012em;margin-bottom:7px}
 .kadr-obrazec .plashka{background:var(--terra);color:var(--krem);border-radius:22px;padding:20px}
 .kadr-obrazec .plashka .metka{color:#fff}
 .kadr-obrazec .plashka summary.metka{color:#fff;font-size:15px}
-.kadr-obrazec .plashka summary.metka::after{font-size:1.5em;line-height:0;vertical-align:-.08em}
+.kadr-obrazec .plashka summary.metka{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.kadr-obrazec .plashka summary.metka::after{content:"▼";display:inline-grid;place-items:center;flex:none;width:34px;height:34px;border-radius:50%;background:#fff;color:var(--terra);font-size:15px;line-height:1;box-shadow:0 2px 6px rgba(0,0,0,.18)}
+.kadr-obrazec .plashka .razdely[open] summary.metka::after{content:"▲"}
 .kadr-obrazec .plashka ul{list-style:none;display:grid;gap:9px;margin:0;padding:0}
 .kadr-obrazec .plashka li{position:relative;padding-left:22px;font-size:15.5px;line-height:1.45;color:#fff}
 .kadr-obrazec .plashka li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--persik-svet)}
