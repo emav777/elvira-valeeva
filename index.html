@@ -70,7 +70,7 @@ ul{list-style:none}
 @keyframes knopka-blik{0%,55%{left:-60%}85%,100%{left:130%}}
 
 /* ===== 1. Обложка ===== */
-.tyomno{position:relative;isolation:isolate;color:#f3efe6;height:540px}
+.tyomno{position:relative;isolation:isolate;color:#f3efe6;height:680px}
 .fon{position:absolute;inset:-40px -40px 0 -40px;z-index:-1;pointer-events:none;filter:blur(13px)}
 .fon i{position:absolute;inset:0;background:#1b1a18;clip-path:polygon(0 0,100% 0,100% calc(100% - 86px),0 100%)}
 .menu{display:flex;justify-content:space-between;align-items:center;padding:26px 64px 0 110px;font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
@@ -82,14 +82,15 @@ ul{list-style:none}
 .bok .imya{writing-mode:vertical-rl;transform:rotate(180deg);letter-spacing:.3em;color:#f3efe6}
 .bok .lin{width:1px;flex:1;background:#4a463f}
 .bok .set{writing-mode:vertical-rl;transform:rotate(180deg);color:#7a7368;letter-spacing:.2em;text-decoration:none}
-.scena{position:relative;display:grid;grid-template-columns:1fr 280px 1fr;grid-template-rows:1fr auto 1fr;column-gap:44px;padding:20px 64px 0 110px;height:430px}
+.scena{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 280px minmax(0,1fr);grid-template-rows:1fr auto 1fr;column-gap:44px;padding:20px 64px 0 110px;height:560px}
 .verh{grid-column:1;grid-row:1;align-self:end;text-align:right;color:#ff8a7a;margin-bottom:14px}
 .scena h1{display:contents;font-weight:300}
-.big{display:block;font-size:70px;line-height:1;font-weight:300;letter-spacing:-.02em}
+.big{display:block;font-size:clamp(44px,4.5vw,70px);line-height:1;font-weight:300;letter-spacing:-.02em}
 .big b{font-weight:600}
 .big.l{grid-column:1;grid-row:2;text-align:right}
 .big.r{grid-column:3;grid-row:2;font-style:italic;color:#ff8a7a}
 .zig{grid-column:1;grid-row:3;justify-self:end;margin-top:22px}
+.pod-obl{grid-column:3;grid-row:3;align-self:start;margin-top:22px;max-width:380px;color:#f3efe6;opacity:.88;font-size:17px;line-height:1.5}
 .arka{grid-column:2;grid-row:1/4;align-self:center;position:relative;width:280px;height:360px}
 .arka::before{content:"";position:absolute;inset:0 -14px -14px 14px;border-radius:140px 140px 0 0;background:#b3261e}
 .arka img{position:relative;display:block;width:100%;height:100%;object-fit:cover;object-position:50% 20%;border-radius:140px 140px 0 0;filter:grayscale(.3) contrast(1.05)}
@@ -214,6 +215,7 @@ ul{list-style:none}
 .kadr-cena .dve{display:grid;grid-template-columns:1fr 1fr;margin-top:50px;box-shadow:0 24px 50px rgba(0,0,0,.14)}
 .kadr-cena .dve>div:first-child{background:#b3261e;color:#f3efe6;padding:48px 44px}
 .summa{font-size:70px;font-weight:300;line-height:1;letter-spacing:-.02em}
+.summa .evro{font-family:"IBM Plex Mono",monospace;font-size:15px;letter-spacing:0;color:#f3efe6;opacity:.75;margin-left:12px;vertical-align:middle;white-space:nowrap;display:inline-block}
 .za{margin-top:20px;font-size:17px}
 .za-ne{color:#ffd2cb;border-top:1px dashed rgba(255,255,255,.45);padding-top:18px}
 .pochemu li{margin-top:22px}
@@ -286,6 +288,11 @@ ul{list-style:none}
 @media(max-width:1180px) and (min-width:900px){
  .anketa{grid-template-columns:1fr 1fr 280px}
  .prof{display:none}
+ .scena{grid-template-columns:minmax(0,1fr) 220px minmax(0,1fr);column-gap:28px;padding:20px 40px 0 90px}
+ .big{font-size:4.5vw}
+ .pod-obl{font-size:16px;margin-top:16px}
+ .arka{width:220px;height:285px}
+ .krug{right:-60px;width:120px;height:120px}
 }
 
 /* ===== Телефон и планшет ===== */
@@ -308,6 +315,8 @@ ul{list-style:none}
  .big{font-size:40px}
  .big.l{text-align:left}
  .big.r{margin-top:4px}
+ .big.r br{display:none}
+ .pod-obl{margin-top:16px;font-size:16px;max-width:none}
  .zig{display:none}
  .arka{width:170px;height:215px;margin:24px auto 0}
  .arka::before,.arka img{border-radius:85px 85px 0 0}
@@ -377,6 +386,7 @@ ul{list-style:none}
  .frag>div:nth-child(2){order:1}
  .kadr-stranicy .esche{display:none}
 }
+@media(min-width:900px){.big{font-size:clamp(40px,3.9vw,58px)}}
 </style>
 </head>
 <body>
@@ -387,8 +397,9 @@ ul{list-style:none}
     <div class="bok mono"><span class="imya">Эльвира Валеева</span><span class="lin"></span><a class="set" href="https://t.me/elvira_valeeva777">Telegram</a></div>
     <div class="menu"><span style="color:#f3efe6">Эльвира Валеева · гипнолог</span><nav><a href="#kak">Как работаю</a><a href="#otchet">Отчёт</a><a href="#otzyvy">Отзывы</a><a href="#voprosy">Вопросы</a></nav><a class="k" href="https://t.me/elvira_valeeva777">Написать</a></div>
     <div class="scena">
-      <p class="verh mono">Эльвира Валеева</p>
-      <h1><span class="big l"><b>Глубинная</b><br>диагностика</span> <span class="big r">по&nbsp;фотографии</span></h1>
+      <p class="verh mono">Глубинная диагностика по&nbsp;фото</p>
+      <h1><span class="big l"><b>Единственный</b><br>сеанс, на&nbsp;котором</span> <span class="big r">вам не&nbsp;нужно <br>даже присутствовать</span></h1>
+      <p class="pod-obl">Присылаете фото и&nbsp;вопросы — и&nbsp;идёте заниматься своими делами. Через 3–7&nbsp;дней получаете запись и&nbsp;расшифровку.</p>
       <svg class="zig" width="110" height="18" viewBox="0 0 110 18" aria-hidden="true"><path d="M2 15 L17 3 L32 15 L47 3 L62 15 L77 3 L92 15 L107 3" stroke="#ff8a7a" stroke-width="2.5" fill="none"/></svg>
       <div class="arka">
         <picture>
@@ -403,7 +414,7 @@ ul{list-style:none}
   <div class="anketa">
     <div class="prof"><span class="mono">Специалист</span><b>Эльвира Валеева</b><span class="mono">Метод</span><b>гипноз с&nbsp;проводником</b><span class="mono">Формат</span><b>онлайн, по фото</b><span class="mono">Срок</span><b>3–7 дней</b></div>
     <div><h4 class="mono">Для кого</h4><p class="pod-h1">Для тех, кто снова и&nbsp;снова попадает в&nbsp;одну и&nbsp;ту же ситуацию — в&nbsp;отношениях, деньгах, работе или важном решении — и&nbsp;хочет понять, что за ней стоит.</p></div>
-    <div><h4 class="mono">Как это идёт</h4><p class="lid"><b>Вы присылаете фото и&nbsp;вопросы.</b> Я&nbsp;работаю с&nbsp;проводником в&nbsp;гипнозе, вам присутствовать не нужно. Через 3–7&nbsp;дней — аудиозапись разбора, расшифровка и&nbsp;рекомендации.</p></div>
+    <div><h4 class="mono">Как это идёт</h4><p class="lid"><b>Вы присылаете фото и&nbsp;вопросы.</b> Я&nbsp;работаю с&nbsp;проводником — это мой партнёр, которого я&nbsp;ввожу в&nbsp;гипноз. Вам присутствовать не нужно. Через 3–7&nbsp;дней — аудиозапись разбора, расшифровка и&nbsp;рекомендации.</p></div>
     <div><p class="ruka">Начнём с&nbsp;разговора?</p><a class="knopka" href="https://t.me/elvira_valeeva777">Обсудить мой случай бесплатно</a><p class="podpis mono">30 минут · без оплаты · скажу честно, подходит ли вам формат. Платить — только после беседы.</p></div>
   </div>
 </section>
@@ -421,7 +432,7 @@ ul{list-style:none}
       <p class="pod">Так это звучит, когда человек пишет мне первый раз.</p>
       <div class="rechi">
         <div class="rech">
-          <q>Меняю работу, окружение, а&nbsp;наступаю на те же „грабли“</q>
+          <q>Меняю работу, окружение, а&nbsp;наступаю на те же «грабли»</q>
           <p>Истории разные, а&nbsp;финал каждый раз один и&nbsp;тот же. Где начинается эта петля — не видно.</p>
         </div>
         <div class="rech">
@@ -431,6 +442,10 @@ ul{list-style:none}
         <div class="rech">
           <q>Всё перепробовала, а&nbsp;сил нет</q>
           <p>Курсы, книги, специалисты. Снаружи всё правильно, а&nbsp;внутри пусто и&nbsp;тяжело.</p>
+        </div>
+        <div class="rech">
+          <q>Всё держу под контролем, а&nbsp;результат каждый раз откатывается</q>
+          <p>План, расчёт, дисциплина — всё сделано правильно. А&nbsp;через время всё снова возвращается к&nbsp;началу.</p>
         </div>
       </div>
     </div>
@@ -451,7 +466,7 @@ ul{list-style:none}
       </div>
       <div>
         <h3>В&nbsp;конце — гармонизация</h3>
-        <p>В&nbsp;завершение я&nbsp;гармонизирую вас, ваше пространство, а&nbsp;при необходимости и&nbsp;саму ситуацию. Обычно уходят нервозность и&nbsp;стресс, появляется ясность в&nbsp;мыслях и&nbsp;действиях.</p>
+        <p>В&nbsp;завершение я&nbsp;гармонизирую вас, ваше пространство, а&nbsp;при необходимости и&nbsp;саму ситуацию. Если видно чужое влияние — ставлю защиту. Обычно уходят нервозность и&nbsp;стресс, появляется ясность в&nbsp;мыслях и&nbsp;действиях.</p>
       </div>
     </div>
   </div>
@@ -516,9 +531,10 @@ ul{list-style:none}
       <div class="cifry">
         <div class="cifra"><b>5&nbsp;лет</b><span>практики</span></div>
         <div class="cifra"><b>140+</b><span>проведённых сеансов</span></div>
-        <div class="cifra"><b>Удалённо</b><span>люди из разных стран</span></div>
+        <div class="cifra"><b>Афины</b><span>работаем онлайн</span></div>
       </div>
-      <p class="tekst">Я&nbsp;не даю советов и&nbsp;не веду курсы.</p>
+      <p class="tekst">Я&nbsp;сама долго ходила по кругу: перепробовала множество техник, пока не нашла энергоинформационный гипноз. Теперь помогаю другим увидеть причину быстрее, чем это удалось мне.</p>
+      <p class="tekst">Я&nbsp;не учу жить и&nbsp;не продаю курсы. Я&nbsp;показываю причину и&nbsp;даю рекомендации — решаете вы.</p>
       <p class="uchoba"><b>Обучение:</b> сертификат Международной ассоциации энергоинформационного гипноза, Санкт-Петербург. Сертификат «Нейрографика», базовый уровень — Институт психологии творчества Павла Пискарёва, 2022.</p>
     </div>
   </div>
@@ -609,8 +625,6 @@ ul{list-style:none}
 <p>Однако:</p>
 <ul><li>Ему категорически нельзя брать на себя лишние обязательства, не обеспеченные реальными ресурсами.</li>
 <li>Кредиты не подходят этому типу души.</li></ul>
-<h4>4.2. <span class="zakr" style="width:22ch"></span></h4>
-<ul><li><span class="zakr" style="width:30ch"></span></li><li><span class="zakr" style="width:24ch"></span></li></ul>
 <p>Клиент своим присутствием и&nbsp;голосом способен:</p>
 <ul><li>успокаивать людей,</li><li>сглаживать конфликты,</li>
 <li>помогать выстраивать баланс в&nbsp;ситуациях — это может быть монетизировано.</li></ul>
@@ -640,13 +654,45 @@ ul{list-style:none}
   </div>
 </section>
 
+<section class="kadr kadr-otzyvy" id="otzyvy">
+  <div class="vnutri">
+    <p class="nad">Отзывы</p>
+    <h2>Три истории: с&nbsp;чем пришли и&nbsp;что было после</h2>
+    <p class="pod">Ко мне приходят по рекомендации, и&nbsp;большинство клиентов не хотят публичности. Публикую только то, на что дали разрешение, — и&nbsp;только имя, по желанию клиента. Слова клиентов — из их отзывов.</p>
+    <div class="keysy">
+      <div class="keys">
+        <div class="shapka"><p class="kto">Валентин</p><p class="srok">сразу после</p></div>
+        <p class="shag"><span class="metka">До сеанса</span><span class="t">«Будучи довольно скептичным человеком…»</span></p>
+        <p class="shag"><span class="metka">В&nbsp;записи</span><span class="t">«…был крайне шокирован, когда раз за разом вы попадали в&nbsp;точку!»</span></p>
+        <p class="shag posle"><span class="metka">После</span><span class="t">«Необычайная лёгкость и&nbsp;прилив энергии сопровождают на каждом шагу».</span></p>
+      </div>
+      <div class="keys">
+        <div class="shapka"><p class="kto">Евгения</p><p class="srok">через неделю</p></div>
+        <p class="shag"><span class="metka">До сеанса</span><span class="t">Деньги — иду ли я&nbsp;в&nbsp;правильную сторону; здоровье — что поберечь; отношения — мужу не хватает моего внимания, а&nbsp;как разорваться на всё, не знаю.</span></p>
+        <p class="shag"><span class="metka">В&nbsp;записи</span><span class="t">«Сейчас у&nbsp;меня настолько всё в&nbsp;гармонии — я&nbsp;к&nbsp;этому шла».</span></p>
+        <p class="shag posle"><span class="metka">После</span><span class="t">«Через неделю после нашего разговора я&nbsp;начала ходить на массаж — и&nbsp;мне так полегчало, мне так стало хорошо».</span></p>
+      </div>
+      <div class="keys">
+        <div class="shapka"><p class="kto">Наталья</p><p class="srok">через 2–3 недели</p></div>
+        <p class="shag"><span class="metka">До сеанса</span><span class="t">«Неуверенная в&nbsp;себе женщина. Постоянно болеющая и&nbsp;разбитая» — так она описала себя, когда слушала запись.</span></p>
+        <p class="shag"><span class="metka">В&nbsp;записи</span><span class="t">«Я&nbsp;сразу узнала себя!»</span></p>
+        <p class="shag posle"><span class="metka">После</span><span class="t">«Спустя две-три недели я&nbsp;начала замечать, что наконец-то поймала гармонию с&nbsp;самой собой. Я&nbsp;снова начала работать, у&nbsp;меня появились новые идеи». Отзыв написала через 2 месяца.</span></p>
+      </div>
+    </div>
+    <div class="esche">
+      <p><b>Артём:</b> «Относился скептически и&nbsp;не думал, что это может как-то помочь. Жаль, что не сделал этого раньше».</p>
+      <p><b>Дмитрий:</b> «Удивило, когда мне озвучили такие нюансы моей ситуации, о&nbsp;которых знаю только я».</p>
+    </div>
+  </div>
+</section>
+
 <section class="kadr kadr-cena">
   <div class="vnutri">
     <p class="nad">Цена</p>
     <h2>Что вы получаете за 20&nbsp;000&nbsp;₽</h2>
     <div class="dve">
       <div>
-        <p class="summa">20&nbsp;000&nbsp;₽</p>
+        <p class="summa">20&nbsp;000&nbsp;₽<span class="evro">чуть больше 200&nbsp;€</span></p>
         <p class="za">Одна оплата за весь сеанс. Без продолжений, подписок и&nbsp;доплат за «второй этап».</p>
         <p class="za za-ne">Это не оплата за час разговора. Вы оплачиваете весь процесс: беседу, работу двух специалистов, разбор, запись, расшифровку и&nbsp;рекомендации.</p>
         <ul class="pochemu">
@@ -660,7 +706,7 @@ ul{list-style:none}
           <li><b>До сеанса:</b> бесплатная беседа 30&nbsp;минут — разбираем запрос и&nbsp;вместе формулируем вопросы</li>
           <li><b>Сеанс около часа:</b> здоровье, отношения, дело и&nbsp;деньги, таланты и&nbsp;предназначение</li>
           <li>Ответы на ваши вопросы — чем конкретнее вопрос, тем конкретнее ответ</li>
-          <li>Гармонизация вас, вашего пространства, при необходимости — и&nbsp;ситуации; защита от чужого влияния</li>
+          <li>Гармонизация вас, вашего пространства, при необходимости — и&nbsp;ситуации</li>
           <li><b>Через 3–7&nbsp;дней:</b> аудиозапись всего разбора, расшифровка текстом и&nbsp;рекомендации — что делать дальше</li>
           <li><b>После:</b> мои пояснения по записи, если что-то непонятно</li>
         </ul>
@@ -670,38 +716,6 @@ ul{list-style:none}
     <div class="zov">
       <a class="knopka" href="https://t.me/elvira_valeeva777">Обсудить мой случай бесплатно</a>
       <p class="podpis">30 минут · без оплаты · скажу честно, подходит ли вам формат. Платить — только после беседы.</p>
-    </div>
-  </div>
-</section>
-
-<section class="kadr kadr-otzyvy" id="otzyvy">
-  <div class="vnutri">
-    <p class="nad">Отзывы</p>
-    <h2>Три истории: с&nbsp;чем пришли и&nbsp;что было после</h2>
-    <p class="pod">Ко мне приходят по рекомендации, и&nbsp;большинство клиентов не хотят публичности. Публикую только то, на что дали разрешение, — и&nbsp;только имя, по желанию клиента. Слова клиентов — из их отзывов.</p>
-    <div class="keysy">
-      <div class="keys">
-        <div class="shapka"><p class="kto">Евгения</p><p class="srok">через неделю</p></div>
-        <p class="shag"><span class="metka">До сеанса</span><span class="t">Деньги — иду ли я&nbsp;в&nbsp;правильную сторону; здоровье — что поберечь; отношения — мужу не хватает моего внимания, а&nbsp;как разорваться на всё, не знаю.</span></p>
-        <p class="shag"><span class="metka">В&nbsp;записи</span><span class="t">«Сейчас у&nbsp;меня настолько всё в&nbsp;гармонии — я&nbsp;к&nbsp;этому шла».</span></p>
-        <p class="shag posle"><span class="metka">После</span><span class="t">«Через неделю после нашего разговора я&nbsp;начала ходить на массаж — и&nbsp;мне так полегчало, мне так стало хорошо».</span></p>
-      </div>
-      <div class="keys">
-        <div class="shapka"><p class="kto">Наталья</p><p class="srok">через 2–3 недели</p></div>
-        <p class="shag"><span class="metka">До сеанса</span><span class="t">«Неуверенная в&nbsp;себе женщина. Постоянно болеющая и&nbsp;разбитая» — так она описала себя, когда слушала запись.</span></p>
-        <p class="shag"><span class="metka">В&nbsp;записи</span><span class="t">«Я&nbsp;сразу узнала себя!»</span></p>
-        <p class="shag posle"><span class="metka">После</span><span class="t">«Спустя две-три недели я&nbsp;начала замечать, что наконец-то поймала гармонию с&nbsp;самой собой. Я&nbsp;снова начала работать, у&nbsp;меня появились новые идеи». Отзыв написала через 2 месяца.</span></p>
-      </div>
-      <div class="keys">
-        <div class="shapka"><p class="kto">Валентин</p><p class="srok">сразу после</p></div>
-        <p class="shag"><span class="metka">До сеанса</span><span class="t">«Будучи довольно скептичным человеком…»</span></p>
-        <p class="shag"><span class="metka">В&nbsp;записи</span><span class="t">«…был крайне шокирован, когда раз за разом вы попадали в&nbsp;точку!»</span></p>
-        <p class="shag posle"><span class="metka">После</span><span class="t">«Необычайная лёгкость и&nbsp;прилив энергии сопровождают на каждом шагу».</span></p>
-      </div>
-    </div>
-    <div class="esche">
-      <p><b>Артём:</b> «Относился скептически и&nbsp;не думал, что это может как-то помочь. Жаль, что не сделал этого раньше».</p>
-      <p><b>Дмитрий:</b> «Удивило, когда мне озвучили такие нюансы моей ситуации, о&nbsp;которых знаю только я».</p>
     </div>
   </div>
 </section>
@@ -731,23 +745,16 @@ ul{list-style:none}
         <details>
           <summary>Что конкретно я&nbsp;получу за 20&nbsp;000&nbsp;₽?</summary>
           <div class="otvet">
-<p>Одна оплата — за весь сеанс, без доплат и&nbsp;«второго этапа». По порядку:</p>
-<ul>
-<li><b>до сеанса:</b> бесплатная беседа 30&nbsp;минут — разбираем запрос и&nbsp;вместе формулируем вопросы</li>
-<li><b>сеанс около часа:</b> работаем вдвоём с&nbsp;проводником, вам присутствовать не нужно. Здоровье, отношения, дело и&nbsp;деньги, таланты и&nbsp;предназначение</li>
-<li>ответы на ваши вопросы — чем конкретнее вопрос, тем конкретнее ответ</li>
-<li>гармонизация вас, вашего пространства, при необходимости — и&nbsp;ситуации</li>
-<li><b>через 3–7&nbsp;дней:</b> аудиозапись, расшифровка текстом и&nbsp;рекомендации</li>
-<li><b>после:</b> мои пояснения по записи, если что-то непонятно.</li>
-</ul>
-<p>Платить — только после беседы и&nbsp;только если вы решите работать.</p>
+<p>Всё перечислено выше, в&nbsp;блоке «Цена». Коротко: беседа, сеанс, запись, расшифровка, пояснения. Без доплат.</p>
           </div>
         </details>
         <details>
-          <summary>А&nbsp;если мне скажут что-то тяжёлое?</summary>
+          <summary>А&nbsp;если мне скажут что-то тяжёлое — например, про здоровье?</summary>
           <div class="otvet">
-<p>В&nbsp;начале сеанса мы всегда смотрим общее состояние человека. Там могут выйти и&nbsp;отклонения по здоровью — я&nbsp;говорю об этом прямо, но это не диагноз и&nbsp;не приговор: если речь о&nbsp;теле, я&nbsp;прошу показаться врачу.</p>
+<p>Я&nbsp;не врач. Диагнозов не ставлю, лечения не назначаю и&nbsp;медицинскую помощь не заменяю.</p>
+<p>В&nbsp;начале сеанса мы всегда смотрим общее состояние человека — там может выйти и&nbsp;то, где тело просит внимания. Я&nbsp;говорю об этом прямо, но это не диагноз и&nbsp;не приговор: если речь о&nbsp;теле, я&nbsp;прошу показаться врачу и&nbsp;пишу об этом в&nbsp;отчёте.</p>
 <p>Я&nbsp;не ищу виноватых и&nbsp;не говорю «вы сами это притянули». Сеанс не заканчивается словами «вот ваша проблема»: в&nbsp;конце всегда гармонизация и&nbsp;рекомендации.</p>
+<p>Если симптомы уже беспокоят, идите к&nbsp;врачу сейчас, не дожидаясь сеанса.</p>
           </div>
         </details>
         <details>
@@ -776,17 +783,9 @@ ul{list-style:none}
           </div>
         </details>
         <details>
-          <summary>А&nbsp;если мой вопрос про здоровье?</summary>
-          <div class="otvet">
-<p>Я&nbsp;не врач. Диагнозов не ставлю, лечения не назначаю и&nbsp;медицинскую помощь не заменяю.</p>
-<p>На сеансе видно другое: где тело просит внимания и&nbsp;что за состоянием стоит. Если речь о&nbsp;теле, я&nbsp;всегда прошу показаться врачу — и&nbsp;в&nbsp;отчёте пишу об этом прямо.</p>
-<p>Если симптомы уже беспокоят, идите к&nbsp;врачу сейчас, не дожидаясь сеанса.</p>
-          </div>
-        </details>
-        <details>
           <summary>Мне нужно во что-то верить, чтобы это сработало?</summary>
           <div class="otvet">
-<p>Нет. Ко мне приходили откровенные скептики. Артём написал после сеанса: «Относился скептически и&nbsp;не думал, что это может как-то помочь… Жаль, что не сделал этого раньше». Дмитрия удивило, что ему озвучили нюансы, о&nbsp;которых знал только он.</p>
+<p>Нет. Ко мне приходили откровенные скептики — их слова есть выше, в&nbsp;отзывах.</p>
 <p>Вам не нужно ни во что верить, настраиваться и&nbsp;что-либо делать. Вы присылаете фото и&nbsp;вопросы — и&nbsp;получаете отчёт. Дальше судите по тому, что в&nbsp;нём.</p>
           </div>
         </details>
@@ -828,7 +827,7 @@ ul{list-style:none}
           <li>Фото удаляю после сеанса</li>
         </ul>
         <a class="knopka" href="https://t.me/elvira_valeeva777">Обсудить мой случай бесплатно</a>
-        <p class="posle">30 минут · без оплаты · скажу честно, подходит ли вам формат. Сеанс — 20&nbsp;000&nbsp;₽, платить только после беседы.</p>
+        <p class="posle">Напишите, с&nbsp;чем пришли — отвечу сегодня.</p>
       </div>
     </div>
   </div>
